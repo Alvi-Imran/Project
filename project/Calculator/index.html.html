@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0px;}
+        body {background-color: blanchedalmond;}
+
+        .cover {
+            margin: 80px 400px;
+            width: 500px;
+            height: 400px;
+            border-radius: 5px;
+            background-color: aquamarine;
+        }
+
+        #value
+        {
+            margin-left: 5px;
+            margin-top: 5px;
+            border-radius: 5px;
+            width: 380px;
+            height: 70px;
+            font-size: 50px;
+            text-align: right;
+        }
+
+        .columne
+        {
+            margin-top: -70px;
+        }
+
+        .columne ul
+        {
+            list-style-type: none;
+            margin-left: 363px;
+            margin-top: 10px;
+        }
+
+        .columne #key 
+        {
+            width: 80px;
+            height: 55px;
+            border-radius: 5px;
+            border: none;
+            background-color:orange;
+            margin: 5px 410px;
+            font-size: 35px;
+        }
+
+        .number #num_but
+        {
+            position: relative;
+            top: -305px;
+            width: 120px;
+            height: 65px;
+            margin: 5px;
+            font-size: 40px;
+            background-color: cornflowerblue;
+            border-radius: 5px;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Calculator</h1>
+
+    <div class="cover">
+        <input type="text" id="value">
+        <div class="columne">
+                <button onclick="clr()"    id="key">AC</button><br>
+                <button onclick="allc()" id="key">DEl</button>
+                <button onclick="key('/')" id="key">/</button><br>
+                <button onclick="key('*')" id="key">*</button><br>
+                <button onclick="key('-')" id="key">-</button><br>
+                <button onclick="key('+')" id="key">+</button><br>
+        </div>
+
+        <div class="number">
+            <button onclick="key('1')" id="num_but">1</button>
+            <button onclick="key('2')" id="num_but">2</button>
+            <button onclick="key('3')" id="num_but">3</button><br>
+            <button onclick="key('4')" id="num_but">4</button>
+            <button onclick="key('5')" id="num_but">5</button>
+            <button onclick="key('6')" id="num_but">6</button><br>
+            <button onclick="key('7')" id="num_but">7</button>
+            <button onclick="key('8')" id="num_but">8</button>
+            <button onclick="key('9')" id="num_but">9</button><br>
+            <button onclick="key('0')" id="num_but">0</button>
+            <button onclick="key('.')" id="num_but">.</button>
+            <button onclick="solve()" id="num_but">=</button>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let inp = document.getElementById("value");
+
+        function key(val) {
+          // document.getElementById("value").value += val
+           inp.value += val;
+        }
+
+        function solve() {
+            let x = inp.value;
+            let y = eval(x);
+            inp.value=y;
+        }
+
+        function clr() {
+            inp.value = "";
+        }
+
+        function allc() {
+           let back = document.getElementById("value").value;
+           document.getElementById("value").value = back.substr(0, back.length -1);
+        }
+
+        
+    </script>
+
+</body>
+</html>
