@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --redpink:#c9002e;
+    --hmfont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===================== Shoping offier css =================== */
+
+#Shoping-offer{
+    width: 70%;
+    height: 700px;
+    margin: 40px auto;
+   
+}
+
+.free-shoping-text {
+    width: 80%;
+    height: 55px;
+    margin-left: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoping-offer-box{
+    width: 100%;
+    height: 643px;
+    background-color: var(--redpink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shoping-offer-box h1{
+    font-size:68px;
+}
+
+.shoping-offer-box h1,h2{
+    padding-top:200px ;
+}
+
+.shoping-offer-box h2{
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.shoping-offer-box ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    padding-top: 150px;
+}
+
+.shoping-offer-box li{
+    width: auto;
+    height: 35px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    background-color: #fff;
+}
+
+.shoping-offer-box p{
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+
+/* ================================== start info selle ========================== */
+#info-salle{
+    width: 70%;
+    height: 170px;
+    background-color: var(--redpink);
+    margin: 5px auto;
+    font-family: var(--hmfont);      
+    text-align: center;
+    color: #fff ;
+    padding-top: 30px;
+}
+
+#info-salle h5{
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+#info-salle p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+#info-salle ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#info-salle ul li{
+    width: auto;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight:600;
+    font-family: var(--hmfont);
+    background-color: #fff;
+    color: #222222;
+}
+
+
+.salle-countdown input{
+    width: 20px;
+    height: 20px;
+    background-color: #222222;
+    margin-top: 10px;
+}
+
+/* END SALLE INFO */
+
+/* ========================= START main-clothe-content ========================= */
+#main-clothe-content{
+    width: 70%;
+    height: 630px;
+    margin: 20px auto;
+   
+}
+
+#main-clothe-content a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    
+    font-family: var(--hmfont);
+}
+
+#main-clothe-content img{
+    width: 100%;
+    z-index: 0;
+}
+
+#main-clothe-content p,button{
+    margin: 15px;
+    position: relative;
+    top: -400px;
+    left: 40px;
+}
+
+#main-clothe-content p{
+    font-size: 34px;
+    font-weight:bold;
+}
+
+#main-clothe-content button{
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--hmfont);
+    background-color: white;
+    border: none;
+}
+
+/* END HERE */
+
+/* ============================== CSS STARTED HERE Best deal here =========================== */
+
+#best-deal-here{
+    width: 70%;
+    height: 350px;  
+    margin: 0 auto;
+}
+
+#best-deal-here button{
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#best-deal-here button:hover{
+    color: #c9002e;
+}
+
+
+#best-deal-here button i{
+    font-size: 14px;
+}
+
+.left{
+    position: relative;
+    top: 120px;
+    left: -20px;
+}
+
+.right{
+    position: relative;
+    top:-160px;
+    left: 900px;
+}
+.hm-slider{
+    width: 90%;
+    height: 270px;
+    display: flex;
+    overflow: auto;
+    margin:-25px 50px;
+    gap: 10px;
+}
+
+.slider-item{
+    padding: 2px;
+    
+}
+
+.slider-item img{
+    width: 130px;
+    height: 200px;
+}
+
+.slider-item p:first-of-type{
+    font-size: 14px;
+    font-family: var(--hmfont);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 130px;
+}
+
+.slider-item  p:last-of-type{
+    color: var(--redpink);
+    font-size: 12px;
+    font-family: var(--hmfont);
+}
+
+.slider-item span{
+    color: black;
+    text-decoration: line-through;
+    font-family: var(--hmfont);
+}
+/* End css */
+
+/* fresh-start */
+.fresh-start {
+    width:500px;
+    height: 200px;
+    background-color: #dfa4c2;
+    
+    margin: 35vh 22vw;
+}
+
+.fresh-start p{
+    font-size: 42px;
+    font-weight:bold;
+}
+
+.fresh-start button{
+   margin-left: 80px;
+}
+
+/* new-season */
+.new-season{
+    width: 500px;
+    height: 200px;
+}
+
+.p-text{
+    font-size: 50px;
+    font-weight: bold;
+}

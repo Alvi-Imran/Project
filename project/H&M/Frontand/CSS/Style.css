@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --blackgry:#222222;
+}
+
+/* ==================== display none =============== */
+
+#small-nav-bar{
+    display: none;
+}
+/* end display none */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ====================== Nav bar here ========================= */
+#nav-box{
+    width: 95%;
+    height: 170px;
+
+    margin:0 auto;
+}
+
+/* ===================first nav bar ============================= */
+.first-nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 250px;    
+
+}
+
+.first-item{
+    width: 320px;
+    height: 40px;
+    padding: 10px 0;
+}
+
+.first-item ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.first-item ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12PX;
+}
+
+.first-item li  a span{
+    display: block;
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius:50px;
+    display: inline-block;
+    margin: 2px;
+}
+
+.first-logo{
+    width: 150px;
+    height: 80px;
+    padding: 30px 40px;
+    margin-top:5px ;
+
+}
+
+
+.first-item-end{
+    width: 310px;
+    height: 40px;
+    padding: 10px 0;
+}
+
+.first-item-end ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.first-item-end li a{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.first-item-end li a i {
+    font-size: 24px;
+}
+
+/* ==== END FIRST NAV BAR ===== */
+
+
+/* ===================== Last nav ============== */
+.last-nav{
+    width: 100%;
+    height: 50px;
+    margin-top: 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.last-nav-link{
+    width: 320px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 470px ;
+}
+
+.last-nav-link ul{
+    list-style: none;
+    display:flex;
+}
+
+.last-nav-link ul li a{
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.last-nav-search-bar{
+    width: 185px;
+    height: 37px;
+    
+    margin-left: 300px;
+    border-bottom: 1px solid black ;
+}
+
+.last-nav-search-bar i{
+    font-size: 20px;
+}
+
+.last-nav-search-bar input{
+    width: 160px;
+    height: 35px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+
+/* ================================= FOOTER CSS ============================ */
+
+footer{
+    width: 100%;
+    height: 90dvh;
+    background-color: #e4e4e4;
+    color: #222222;
+    flex-direction: column;
+    padding-top: 40px;
+    justify-content: center;
+    justify-items: center
+}
+
+.footer-ditail{
+    width: 70%;
+    height: 40dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ditail-item{
+    width: 150px;
+    height: 200px;
+   
+}
+
+.ditail-item ul{
+    list-style-type:none;
+    padding: 10px 0;
+}
+
+.ditail-item ul li{
+    font-size: 12px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.ditail-item ul li:hover{
+    text-decoration: underline;
+}
+
+.ditail-link{
+    width: 200px;
+    text-align: justify;
+    height: 110px;
+    margin-top: -25px;
+    font-size: 12px;
+}   
+
+.ditail-link a{
+    text-decoration:underline ;
+    font-size: 16px;
+}
+.ditail-link a:hover{
+    opacity: 0.5;;
+}
+
+.ditail-link i{
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.footer-application{
+    width: 300px;
+    height: 40px;
+
+    padding: 5px 30px;
+    margin-top:30px ;
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+
+.footer-hm-text{
+    /* background-color: aquamarine; */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.footer-hm-text p{
+    font-size: 11px;
+    text-align: justify;
+}
+
+.footer-hm-text img{
+    margin: 20px 200px;
+}
+
+.footer-hm-text a{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 170px;
+}
+
+.footer-hm-text a:hover{
+    opacity: 0.6;
+}

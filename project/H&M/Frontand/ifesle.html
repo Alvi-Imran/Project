@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if condition</title>
+</head>
+<body>
+        <h1>IF Condition</h1>
+
+    <script>
+        let room = prompt("Enter Room Type AC / None AC");
+        let age;
+        
+        if(room == "AC"){
+            alert("AC Room Amount - 500₹")
+           age = parseInt(prompt("Enter your Age"));
+            if(age>60){
+                let stay = parseInt(prompt("how many days will you stay"));
+                if(stay>10){
+                    let total = 500*stay - 1000;
+                    alert("2 Days Discount total Amount = " + total);
+                }
+                else if(stay<10){
+                    alert("1 Day Discount" )
+                }
+            }
+            else if(age<60){
+                let stay = parseInt(prompt("how many days will you stay"));
+                if(stay>10){
+                    alert("1 Day Discount")
+                }
+            }
+              else  {
+                    alert("2 Day Discount")
+                }
+            }
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
