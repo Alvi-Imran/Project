@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 600px;
+            height: 450px;
+            background-color: rgb(228, 229, 230);
+            border-radius: 20px;
+            box-shadow: 5px 5px 3px #6e6c6c;
+            text-align: center;
+            background-image: url("https://cdn.pixabay.com/photo/2018/01/18/07/31/bitcoin-3089728_1280.jpg");
+            background-size: cover;
+        }
+
+        .inp-box {
+            width: 100%;
+            height: 100px;
+            font-size: 22px;
+            padding-top: 30px;
+        }
+
+        .inp-box input {
+            width: 300px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            padding-left: 10px;
+            font-size: 18px;
+        }
+
+        .select-cover {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .currency-option {
+            width: 280px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .currency-option span {
+            width: 60px;
+            height: 40px;
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            padding-top: 10px;
+            background-color: rgb(197, 195, 185);
+            text-align: center;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .selectoption {
+            width: 200px;
+            height: 40px;
+            border: 1px solid rgb(202, 201, 200);
+            outline: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            height: 60px;
+            /* border: 1px solid black; */
+            padding-top: 10px;
+        }
+
+        .submit-btn button {
+            width: 120px;
+            height: 35px;
+            border-radius: 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .amout-show {
+            width: 100%;
+            height: 100px;
+            font-size: 20px;
+            padding-top: 30px;
+        }
+
+        #display-amount {
+            color: rgb(197, 0, 0);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Currency Converter</h1>
+        <div class="inp-box">
+            <label for="currency">Amount Converter</label>
+            <input type="text" name="currency" id="currency" placeholder="0.000">
+        </div>
+
+        <div class="select-cover">
+            <div class="currency-option">
+                <span>FROM</span>
+                <select name="option" id="select-option" class="selectoption">
+                    <option value="">Select One …</option>
+                    <option value="USD">USD</option>
+                    <option value="AED">AED</option>
+                    <option value="ARS">ARS</option>
+                    <option value="AUD">AUD</option>
+                    <option value="BGN">BGN</option>
+                    <option value="BRL">BRL</option>
+                    <option value="BSD">BSD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CLP">CLP</option>
+                    <option value="CNY">CNY</option>
+                    <option value="COP">COP</option>
+                    <option value="CZK">CZK</option>
+                    <option value="DKK">DKK</option>
+                    <option value="DOP">DOP</option>
+                    <option value="EGP">EGP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="FJD">FJD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="GTQ">GTQ</option>
+                    <option value="HKD">HKD</option>
+                    <option value="HRK">HRK</option>
+                    <option value="HUF">HUF</option>
+                    <option value="IDR">IDR</option>
+                    <option value="ILS">ILS</option>
+                    <option value="INR">INR</option>
+                    <option value="ISK">ISK</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KRW">KRW</option>
+                    <option value="KZT">KZT</option>
+                    <option value="MVR">MVR</option>
+                    <option value="MXN">MXN</option>
+                    <option value="MYR">MYR</option>
+                    <option value="NOK">NOK</option>
+                    <option value="NZD">NZD</option>
+                    <option value="PAB">PAB</option>
+                    <option value="PEN">PEN</option>
+                    <option value="PHP">PHP</option>
+                    <option value="PKR">PKR</option>
+                    <option value="PLN">PLN</option>
+                    <option value="PYG">PYG</option>
+                    <option value="RON">RON</option>
+                    <option value="RUB">RUB</option>
+                    <option value="SAR">SAR</option>
+                    <option value="SEK">SEK</option>
+                    <option value="SGD">SGD</option>
+                    <option value="THB">THB</option>
+                    <option value="TRY">TRY</option>
+                    <option value="TWD">TWD</option>
+                    <option value="UAH">UAH</option>
+                    <option value="UYU">UYU</option>
+                    <option value="ZAR">ZAR</option>
+                </select>
+            </div>
+            <div class="currency-option">
+                <span>TO</span>
+                <select name="option" id="select-option2" class="selectoption">
+                    <option value="">Select One …</option>
+                    <option value="USD">USD</option>
+                    <option value="AED">AED</option>
+                    <option value="ARS">ARS</option>
+                    <option value="AUD">AUD</option>
+                    <option value="BGN">BGN</option>
+                    <option value="BRL">BRL</option>
+                    <option value="BSD">BSD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CLP">CLP</option>
+                    <option value="CNY">CNY</option>
+                    <option value="COP">COP</option>
+                    <option value="CZK">CZK</option>
+                    <option value="DKK">DKK</option>
+                    <option value="DOP">DOP</option>
+                    <option value="EGP">EGP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="FJD">FJD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="GTQ">GTQ</option>
+                    <option value="HKD">HKD</option>
+                    <option value="HRK">HRK</option>
+                    <option value="HUF">HUF</option>
+                    <option value="IDR">IDR</option>
+                    <option value="ILS">ILS</option>
+                    <option value="INR">INR</option>
+                    <option value="ISK">ISK</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KRW">KRW</option>
+                    <option value="KZT">KZT</option>
+                    <option value="MVR">MVR</option>
+                    <option value="MXN">MXN</option>
+                    <option value="MYR">MYR</option>
+                    <option value="NOK">NOK</option>
+                    <option value="NZD">NZD</option>
+                    <option value="PAB">PAB</option>
+                    <option value="PEN">PEN</option>
+                    <option value="PHP">PHP</option>
+                    <option value="PKR">PKR</option>
+                    <option value="PLN">PLN</option>
+                    <option value="PYG">PYG</option>
+                    <option value="RON">RON</option>
+                    <option value="RUB">RUB</option>
+                    <option value="SAR">SAR</option>
+                    <option value="SEK">SEK</option>
+                    <option value="SGD">SGD</option>
+                    <option value="THB">THB</option>
+                    <option value="TRY">TRY</option>
+                    <option value="TWD">TWD</option>
+                    <option value="UAH">UAH</option>
+                    <option value="UYU">UYU</option>
+                    <option value="ZAR">ZAR</option>
+                </select>
+            </div>
+        </div>
+        <div class="submit-btn">
+            <button id="subbtm">Submit</button>
+        </div>
+        <div class="amout-show">
+            <p>Converted Amount: <span id="display-amount"></span></p>
+        </div>
+    </div>
+
+    <!-- <img src="https://flagsapi.com/IN/flat/64.png"> -->
+
+
+    <script>
+        let btn = document.getElementById("subbtm");
+        let showAmount = document.getElementById("display-amount");
+        
+        btn.addEventListener("click", () => {
+            
+            let inp = document.getElementById("currency").value;
+            let from = document.getElementById("select-option").value;
+            let to = document.getElementById("select-option2").value;
+            
+         
+
+            fetch(`https://v6.exchangerate-api.com/v6/60911766c49767e1088771ef/latest/${from}`)
+                .then(response => response.json())
+                .then(data => {
+                    let rate = data.conversion_rates[to];
+                    let converted = (inp * rate).toFixed(2);
+                    showAmount.innerHTML = `${inp} ${from} = ${converted} ${to}`;
+                })
+                .catch(error => {
+                    showAmount.innerHTML = "Error fetching exchange rate.";
+                    console.error(error);
+                });
+        });
+
+
+    </script>
+</body>
+
+</html>
