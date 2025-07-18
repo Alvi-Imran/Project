@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: #d9f0cc;
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: orangered;
+        }
+
+        .clock {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(250, 247, 247, 0.849);
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 10px solid rgb(196, 194, 194);
+            box-shadow: 5px 5px 20px inset #464646;
+        }
+
+        .clock-num {
+            position: absolute;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .num12 {
+            top: 15px;
+        }
+
+        .num3 {
+
+            right: 15px;
+        }
+
+        .num6 {
+            bottom: 15px;
+        }
+
+        .num9 {
+            left: 15px;
+        }
+
+        .dott {
+            z-index: 5;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        .clock-heads {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .heads {
+            position: absolute;
+            width: 7px;
+            height: 100px;
+            border-radius: 50% 50% 0 0;
+            background-color: green;
+        }
+
+        .head-hours{
+            height: 80px;
+        }
+
+        .head-min{
+            height: 90px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Wall Clock</h1>
+
+    <div class="clock">
+        <div class="clock-heads" id="hour"><i class="heads head-hours" style="background-color: skyblue;"></i></div>
+        <div class="clock-heads" id="min"><i class="heads head-min" style="background-color: black;"></i></div>
+        <div class="clock-heads" id="sec"><i class="heads" style="background-color: red;"></i></div>
+
+        <span class="clock-num num12">12</span>
+        <span class="clock-num num3">3</span>
+        <span class="clock-num num6">6</span>
+        <span class="clock-num num9">9</span>
+        <span class="clock-num dott"></span>
+    </div>
+
+
+
+
+<script>
+    let h = document.getElementById("hour");
+    let m = document.getElementById("min");
+    let s= document.getElementById("sec");
+
+    function clock(){
+        let Dates = new Date();
+        
+        let hr = Dates.getHours();
+        let mi = Dates.getMinutes();
+        let se = Dates.getSeconds();
+        
+        let hrotate = (hr/12) * 360;
+        let mrotate = (mi/60) * 360;
+        let srotate = (se/60) * 360;
+              
+        h.style.transform = `rotate(${hrotate}deg)`;
+        m.style.transform = `rotate(${mrotate}deg)`;
+        s.style.transform = `rotate(${srotate}deg)`;
+
+    }
+
+    setInterval(clock,1000)
+
+
+
+</script>
+</body>
+</html>
