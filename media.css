@@ -857,18 +857,25 @@
 
     .footer-content {
         width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
         border-bottom: 1px solid white;
+        color: #000;
     }
 
-    .social-links li {
-        margin: 10px;
+    .footerbox{
+        width: 100%;
+        height: 100%;
     }
 
+    .service ul{
+        list-style: none;
+    }
+    
     .footerbox ul li {
+        margin: 10px;
         font-size: 14px;
     }
 
@@ -1153,10 +1160,11 @@
     .footer-content {
         width: 100%;
         height: auto;
+        color: black;
     }
 
-    .social-links li {
-        margin: 10px;
+       .service ul{
+        list-style: none;
     }
 
     .footerbox ul li {
@@ -1442,6 +1450,7 @@
         font-size: 16px;
         line-height: 25px;
     }
+
 
     .skill {
         width: 40%;
@@ -1733,14 +1742,9 @@
         font-size: 26px;
     }
 
-    .footerbox ul {
-        list-style: none;
-        margin: 10px;
-    }
-
     .footerbox ul li {
-        padding: 5px 0;
-        /* line-height: 25px; */
+         gap: 10px;   
+
     }
 
     .footerbox ul li:hover {
