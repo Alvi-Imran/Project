@@ -275,13 +275,13 @@ nav {
 .about-contant button {
     position: relative;
     top: 50px;
-    right: 150px;
+    left: 0;
     border: none;
     border-radius: 10px;
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
-    margin:0 20px;
+    margin: 0 10px;
 }
 
 .about-contant button a{
