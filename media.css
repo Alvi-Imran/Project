@@ -51,14 +51,15 @@
     }
 
     @keyframes size {
-    0% {
-        width: 200px;
+        0% {
+            width: 200px;
+        }
+
+        100% {
+            width: 160px;
+        }
     }
 
-    100% {
-        width: 160px;
-    }
-}
     .hero-content {
         width: 100%;
         height: 30%;
@@ -352,7 +353,7 @@
         height: 50%;
     }
 
-        @keyframes size {
+    @keyframes size {
         0% {
             width: 240px;
         }
@@ -657,14 +658,14 @@
         height: 60%;
     }
 
-       @keyframes size {
-    0% {
-        width: 250px;
-    }
+    @keyframes size {
+        0% {
+            width: 250px;
+        }
 
-    100% {
-        width: 303px;
-    }
+        100% {
+            width: 303px;
+        }
     }
 
     .shap {
@@ -887,21 +888,21 @@
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: auto auto ;
+        grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
         border-bottom: 1px solid white;
         color: #000;
     }
 
-    .footerbox{
+    .footerbox {
         width: 100%;
         height: 100%;
     }
 
-    .service ul{
+    .service ul {
         list-style: none;
     }
-    
+
     .footerbox ul li {
         margin: 10px;
         font-size: 14px;
@@ -997,6 +998,16 @@
     .hero-imge {
         width: 60%;
         height: 100%;
+    }
+
+    @keyframes size {
+        0% {
+            width: 250px;
+        }
+
+        100% {
+            width: 303px;
+        }
     }
 
     .shap {
@@ -1191,7 +1202,7 @@
         color: black;
     }
 
-       .service ul{
+    .service ul {
         list-style: none;
     }
 
@@ -1209,8 +1220,8 @@
         padding: 25px 0;
     }
 
-    .contact-form form{
-         width: 100%;
+    .contact-form form {
+        width: 100%;
     }
 
     .contact-form input {
@@ -1771,7 +1782,7 @@
     }
 
     .footerbox ul li {
-         gap: 10px;   
+        gap: 10px;
 
     }
 
@@ -1812,8 +1823,8 @@
         justify-content: space-between;
     }
 
-    .contact-form form{
-         width: 100%;
+    .contact-form form {
+        width: 100%;
     }
 
 
