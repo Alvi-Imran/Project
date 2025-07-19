@@ -263,6 +263,7 @@ nav {
     font-weight: 500;
     text-align: left;
     z-index: 10;
+    background-color: salmon;
 }
 
 .about-contant p {
