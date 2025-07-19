@@ -271,7 +271,14 @@ nav {
     line-height: 25px;
 }
 
-.about-contant button {
+.about-btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.about-btn button {
     position: relative;
     top: 50px;
     left: -100;
@@ -283,7 +290,9 @@ nav {
     margin: 0 10px;
 }
 
-.about-contant button a{
+
+
+.about-btn button a{
     text-decoration: none;
     color:#000;
 }
