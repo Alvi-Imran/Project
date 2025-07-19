@@ -274,13 +274,18 @@ nav {
 .about-contant button {
     position: relative;
     top: 50px;
-    left: 125px;
+    left: 100px;
     border: none;
     border-radius: 10px;
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
-    margin:20px;
+    margin:0 20px;
+}
+
+.about-contant button a{
+    text-decoration: none;
+    color:#000;
 }
 
 .skill {
