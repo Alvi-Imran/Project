@@ -1443,17 +1443,6 @@
         line-height: 25px;
     }
 
-    .about-contant button {
-        position: relative;
-        top: 50px;
-        left: 125px;
-        border: none;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 16px;
-        font-weight: 600;
-    }
-
     .skill {
         width: 40%;
         height: 90%;
