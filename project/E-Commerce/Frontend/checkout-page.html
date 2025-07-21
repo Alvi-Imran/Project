@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopcart checkout</title>
+    <link rel="stylesheet" href="checkout-page.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="Logo/shopcart.png" alt=""></a>
+            </div>
+            <div class="search-bar">
+                <input list="li" type="search" name="search" id="search" placeholder="Search" spellcheck="true">
+                <button id="search-btn"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="login">
+                <i class="bi bi-person-circle"></i>
+                <span class="spanTag">Login</span>
+                <div class="login-dital">
+                    <button><a href="#">Sign up</a></button>
+                    <hr>
+                    <ul>
+                        <li><i class="bi bi-person-circle"></i>My profile</li>
+                        <li><i class="bi bi-box2"></i>My Order</li>
+                        <li><i class="bi bi-heart"></i>Wishlist</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cart" onclick="cartfunc()">
+                <a href="#">
+                    <i class="bi bi-cart3"></i>
+                    <span class="spanTag">Cart <span id="cartval"
+                            style="background-color: gray; color: aliceblue;"></span></span>
+                </a>
+            </div>
+            <div class="servces">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="servces-list">
+                    <ul>
+                        <li><i class="bi bi-bell"></i>Notification</li>
+                        <li><i class="bi bi-headset"></i>24x7 Customer care</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <datalist id="li">
+        <option value="mobile"></option>
+        <option value="phone"></option>
+        <option value="iphone"></option>
+        <option value="samsung"></option>
+        <option value="google"></option>
+        <option value="moto"></option>
+        <option value="nothing"></option>
+        <option value="realme"></option>
+        <option value="men clothes"></option>
+        <option value="shirt"></option>
+        <option value="hafe shirt"></option>
+        <option value="full shirt"></option>
+        <option value="check shirt"></option>
+        <option value="hafe t-shirt"></option>
+        <option value="t shirt"></option>
+        <option value="women clothes"></option>
+        <option value="flared"></option>
+        <option value="floral"></option>
+        <option value="kurta"></option>
+        <option value="girls calf length dress"></option>
+        <option value="women suits"></option>
+        <option value="electronic"></option>
+        <option value="boult"></option>
+        <option value="bout"></option>
+        <option value="laptop"></option>
+        <option value="Washing Machine"></option>
+        <option value="sumsung smart tv"></option>
+        <option value="toy"></option>
+        <option value="Car Remote Control"></option>
+    </datalist>
+
+    <!-- ---------------- checkout page -----------------  -->
+    <div class="checkout-container" id="checkout-container">
+        <div class="checkout-box">
+            <div class="checkout-item1">
+                <h2>Checkout</h2>
+            </div>
+            <div class="checkout-item2">
+                <h4>Shipping Information</h4>
+                <form action="#">
+                    <div class="name-phone">
+                        <label for="Fname">Full Name</label><br>
+                        <input class="input-detal" type="text" name="fname" id="Fname" required><br><br>
+
+                        <label for="email">Email Id</label><br>
+                        <input class="input-detal" type="email" id="email" required><br><br>
+
+                        <label for="phone">Phone No.</label><br>
+                        <input class="input-detal" type="tel" name="phone" id="tel" required><br><br>
+
+                        <label for="Address">Address</label><br>
+                        <input class="input-detal" type="text" name="address" id="Address" required><br><br>
+                    </div>
+
+                    <div class="address-all">
+                        <ul>
+                            <li>
+                                <label for="City">City</label><br>
+                                <input type="text" name="City" id="City" required><br>
+                            </li>
+                            <li>
+                                <label for="state">State</label><br>
+                                <input type="text" name="state" id="state" required><br>
+                            </li>
+                            <li>
+                                <label for="pincode">Pin Code</label><br>
+                                <input type="text" name="pincode" id="pincode" required><br>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" id="checked">
+                    <label for="checkbox" for="checked">I have and agree to the terms and Conditions.</label>
+                </form>
+            </div>
+        </div>
+        <div class="checkout-box">
+            <div class="order-detail">
+                <div class="order-item">
+                    <div class="order-img">
+                        <img id="img" src="Products/Asus-tuf.jpeg" alt="">
+                    </div>
+                    <div class="order-data od">
+                        <div class="model-price ">
+                            <p id="detail">model</p>
+                        </div>
+                        <div class="price-model">
+                            <p id="price"></p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="last-item">
+                    <div class="shipping">
+                        <table>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td>1599</td>
+                            </tr>
+                            <tr>
+                                <td>shipping</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Total Price</td>
+                                <td>1649</td>
+                            </tr>
+                        </table>
+                        <div class="payment-mode">
+                            <label>Payment Method</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="cash" name="online">
+                                    <label for="cash">Cash on Delivery</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="credit" name="online">
+                                    <label for="credit">Credit Card</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="debit" name="online">
+                                    <label for="debit">Debit Card</label>
+                                </li>
+                                <li>
+                                    <select id="payment" name="online">
+                                        <option value="UPI">UPI</option>
+                                        <option value="PhonePe">PhonePe</option>
+                                        <option value="Paytem">Paytem</option>
+                                        <option value="Google Pay">Google Pay</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <button id="placeOrder">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============ END Checkout page ================ -->
+
+    <!-- ------------ Start Order Confirmation page ---------- -->
+     <div id="order-conform">
+        <h2>Thank you for your order!</h2>
+        <p>Your order has been placed successfully.</p>
+        <div class="order-cove">
+            <table>
+                <tr>
+                    <td class="bold">Order ID:</td>
+                    <td>ORD12053</td>
+                </tr>
+                <tr>
+                    <td class="bold">Product:</td>
+                    <td>wireless Headphone</td>
+                </tr>
+                <tr>
+                    <td class="bold">Quantity:</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="bold">price: </td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td class="bold">Payment Mode:</td>
+                    <td>Cash on Delivery</td>
+                </tr>
+                <tr>
+                    <td class="bold">Total Price:</td>
+                    <td>1999</td>
+                </tr>
+            </table>
+        </div>
+        <button><a href="index.html">Go to Home</a></button>
+     </div>
+
+    <!-- ----------------- Start footer ----------- -->
+         <footer>
+            <div class="footer-cover">
+                <div class="footer-items">
+                    <div class="footer-heading">Shopcart E-Commerce</div>
+                    <div class="footer-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sapiente ullam odio libero
+                        facere
+                        fuga rem doloribus?
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-heading">Quick Links</div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">blogs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-heading">Shop Now</div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">Trending Products</a></li>
+                            <li><a href="#">New Arrival Products</a></li>
+                            <li><a href="#">Featured Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-heading">Reach Us</div>
+                    <div class="footer-content">
+                        <ul>
+                            <li>I-43 Lal Kuan New Delhi - 110044</li>
+                            <li>+91 - 8447337491</li>
+                            <li>Teachmaind0007@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-buttom">
+                2025 - ShopCart - E-Commerce. All right reserved.
+            </div>
+        </footer>
+
+
+    <script src="checkout-page.js"></script>
+</body>
+
+</html>

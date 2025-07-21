@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopcart</title>
+    <link rel="shortcut icon" href="Logo/shopcart-logo.png" type="image/x-icon">
+    <!-- Css Link-->
+    <link rel="stylesheet" href="index.css">
+    <!-- css Link nav and footer -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap CDN icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- jquery CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="logo">
+                <img src="Logo/shopcart.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input list="li" type="search" name="search" id="search" placeholder="Search" spellcheck="true">
+                <button id="search-btn"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="nav-covers">
+                <i class="bi bi-list"></i>
+                <div class="nav-all-cover">
+                    <div class="login">
+                        <i class="bi bi-person-circle"></i>
+                        <span class="spanTag">Login</span>
+                        <div class="login-dital">
+                            <button><a href="#">Sign up</a></button>
+                            <hr>
+                            <ul>
+                                <li><i class="bi bi-person-circle"></i>My profile</li>
+                                <li><i class="bi bi-box2"></i>My Order</li>
+                                <li><i class="bi bi-heart"></i>Wishlist</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cart" onclick="Cartfun()">
+                        <a href="#">
+                            <i class="bi bi-cart3"></i>
+                            <span class="spanTag">Cart <span id="cartval"
+                                    style="background-color: gray; color: aliceblue;"></span></span>
+                        </a>
+                    </div>
+                    <div class="servces">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="servces-list">
+                            <ul>
+                                <li><i class="bi bi-bell"></i>Notification</li>
+                                <li><i class="bi bi-headset"></i>24x7 Customer care</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav2" id="nav2">
+        <div class="nav-menu" id="mobile">
+            <img src="nav-img/mobile.png" alt="">
+            <span>Mobile</span>
+        </div>
+        <div class="nav-menu" id="men">
+            <img src="nav-img/man.png" alt="">
+            <span>Men</span>
+        </div>
+        <div class="nav-menu" id="WomenData">
+            <img src="nav-img/woman.png" alt="">
+            <span>Women</span>
+        </div>
+        <div class="nav-menu" id="electronicesNav">
+            <img src="nav-img/laptop.png" alt="">
+            <span>Electronic</span>
+        </div>
+        <div class="nav-menu" id="toys">
+            <img src="nav-img/toys.png" alt="">
+            <span>Toys</span>
+        </div>
+    </div>
+
+   
+    <datalist id="li">
+        <option value="mobile"></option>
+        <option value="phone"></option>
+        <option value="iphone"></option>
+        <option value="samsung"></option>
+        <option value="google"></option>
+        <option value="moto"></option>
+        <option value="nothing"></option>
+        <option value="realme"></option>
+        <option value="men clothes"></option>
+        <option value="shirt"></option>
+        <option value="hafe shirt"></option>
+        <option value="full shirt"></option>
+        <option value="check shirt"></option>
+        <option value="hafe t-shirt"></option>
+        <option value="t shirt"></option>
+        <option value="women clothes"></option>
+        <option value="flared"></option>
+        <option value="floral"></option>
+        <option value="kurta"></option>
+        <option value="girls calf length dress"></option>
+        <option value="women suits"></option>
+        <option value="electronic"></option>
+        <option value="boult"></option>
+        <option value="bout"></option>
+        <option value="laptop"></option>
+        <option value="Washing Machine"></option>
+        <option value="sumsung smart tv"></option>
+        <option value="toy"></option>
+        <option value="Car Remote Control"></option>
+    </datalist>
+
+    <!-- All container -->
+    <div id="container">
+        <!-- Insert Javascript data -->
+        <div id="js-data"></div>
+
+
+        <!-- Add To cart box -->
+        <div id="addCart">
+            <div class="cart-empty" id="notCart">
+                <img src="Products/empty-cart.png" alt="">
+                <p>Your Add to Cart Empty</p>
+            </div>
+            <div class="cart-head">
+                <div class="head-item">Item</div>
+                <div class="head-item">Price</div>
+                <div class="head-item">Quantity</div>
+                <div class="head-item">Total</div>
+                <div class="head-item"></div>
+            </div>
+            <div class="cart-cover" id="cart-cover"></div>
+        </div>
+
+        <!-- All cover Frant data -->
+        <div class="container-box">
+            <!-- hero-section -->
+            <div class="hero-section">
+                <div class="hero-cover">
+                    <img id="hero-background-img" src="banner/product-display.jpg" alt="">
+                    <img id="hero-product" src="banner/boult-original-Photoroom.png" alt="">
+                </div>
+                <div class="hero-btn">
+                    <button onclick="prev()"><i class="bi bi-chevron-left"></i></button>
+                    <button onclick="next()"><i class="bi bi-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- mobile section -->
+            <div class="shopcard-products">
+                <h2>Mobile Sale</h2>
+                <div class="shoping-box"></div>
+            </div>
+
+            <!-- men clothes -->
+            <div class="clothes">
+                <h2>Men Clothes</h2>
+                <div class="clothes-cover" id="men-div">
+                </div>
+            </div>
+            <!-- end men clothes  -->
+
+            <!--Start women clothes  -->
+            <div class="clothes">
+                <h2>Women Clothes</h2>
+                <div class="clothes-cover" id="women"></div>
+            </div>
+            <!-- end women clothes -->
+
+            <!-- start electronices items -->
+            <div class="clothes">
+                <h2>Electronices</h2>
+                <div class="clothes-cover" id="electronices"></div>
+            </div>
+            <!-- end electronices item -->
+
+            <!-- start Toys  -->
+            <div class="clothes">
+                <h2>Toys</h2>
+                <div class="clothes-cover" id="toy"></div>
+            </div>
+            <!-- end toys -->
+
+
+            <!-- container-box end div -->
+        </div>
+
+        <!-- <a href="productdital.html">Buy</a> -->
+        <footer>
+            <div class="footer-cover">
+                <div class="footer-items">
+                    <div class="footer-heading">Shopcart E-Commerce</div>
+                    <div class="footer-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sapiente ullam odio libero
+                        facere
+                        fuga rem doloribus?
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-heading">Quick Links</div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">blogs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-heading">Shop Now</div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">Trending Products</a></li>
+                            <li><a href="#">New Arrival Products</a></li>
+                            <li><a href="#">Featured Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-heading">Reach Us</div>
+                    <div class="footer-content">
+                        <ul>
+                            <li>I-43 Lal Kuan New Delhi - 110044</li>
+                            <li>+91 - 8447337491</li>
+                            <li>Teachmaind0007@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-buttom">
+                2025 - ShopCart - E-Commerce. All right reserved.
+            </div>
+        </footer>
+
+        <!-- container end div-->
+    </div>
+
+
+    <!-- Js Link -->
+    <script src="more.js"></script>
+    <script src="index.js"></script>
+    <!-- <script src="data.js"></script> -->
+
+</body>
+
+</html>

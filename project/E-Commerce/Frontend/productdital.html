@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="Logo/shopcart-logo.png" type="image/x-icon">
+    <!-- Css Link-->
+    <link rel="stylesheet" href="productdital.css">
+    <!-- css Link nav and footer -->
+    <link rel="stylesheet" href="style.css">
+    <!-- index css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- bootstrap CDN icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="Logo/shopcart.png" alt=""></a>
+            </div>
+            <div class="search-bar">
+                <input type="search" name="search" id="search" placeholder="Search" spellcheck="true">
+                <button id="search-btn"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="login">
+                <i class="bi bi-person-circle"></i>
+                <span class="spanTag">Login</span>
+                <div class="login-dital">
+                    <button><a href="#">Sign up</a></button>
+                    <hr>
+                    <ul>
+                        <li><i class="bi bi-person-circle"></i>My profile</li>
+                        <li><i class="bi bi-box2"></i>My Order</li>
+                        <li><i class="bi bi-heart"></i>Wishlist</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cart" onclick="cartfunc()">
+                <a href="#">
+                    <i class="bi bi-cart3"></i>
+                    <span class="spanTag">Cart <span id="cartval"
+                            style="background-color: gray; color: aliceblue;"></span></span>
+                </a>
+            </div>
+            <div class="servces">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="servces-list">
+                    <ul>
+                        <li><i class="bi bi-bell"></i>Notification</li>
+                        <li><i class="bi bi-headset"></i>24x7 Customer care</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- nav end -->
+
+
+    <!-- Add To cart box -->
+    <div id="addCart">
+        <div class="cart-head">
+            <div class="head-item">Item</div>
+            <div class="head-item">Price</div>
+            <div class="head-item">Quantity</div>
+            <div class="head-item">Total</div>
+            <div class="head-item"></div>
+        </div>
+        <div class="cart-cover" id="cart-cover">
+            <div class="cart-all-item" id="cart-data">
+                <div class="all-item">
+                    <div class="cart-img">
+                        <img src="Products/samsung S25 ultra.webp" alt="">
+                    </div>
+                    <div class="cart-ditail">
+                        <h3>Samsung</h3>
+                        <p>Samsung Galaxy S25 Ultra</p>
+                        <p>Black, 126GB ROM | 12GB RAM</p>
+                    </div>
+                </div>
+                <div class="all-item">₹1,41,999</div>
+                <div class="all-item">
+                    <div class="card-btn">
+                        <button class="minus">-</button>
+                        <input class="inp-value" type="text" readonly value="1">
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+                <div class="all-item">₹1,41,999</div>
+                <div class="all-item">
+                    <button>Remove</button><br>
+                    <button>buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end cart -->
+
+    <!-- product dital container -->
+    <div class="container" id="products-Ditail">
+        <div class="tow-container">
+            <div class="first-img">
+                <img id="product-main-img" src="" alt="">
+            </div>
+            <div class="all-img" id="all-img">
+                <!-- all thumbnail img -->
+            </div>
+        </div>
+        <div class="tow-container">
+            <div class="container-item">
+                <h3 id="brand"></h3>
+                <p id="model"></p>
+                <p id="sp"></p>
+                <p id="Detail-p"></p>
+            </div>
+            <div class="container-item">
+                <h3 id="Description">Description:</h3>
+                <p id="desc-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum unde repudiandae facere
+                    illum
+                    minima necessitatibus, dolorem odit porro sapiente dolore a tenetur neque eos explicabo,
+                    harum fugit debitis sint beatae.</p>
+            </div>
+            <div class="container-item price-quantity-box">
+                 <!-- insrt price and quantity box -->
+                
+            </div>
+            <div class="container-item">
+                <button>ADD TO CART</button>
+                <button id="buynow">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-cover">
+            <div class="footer-items">
+                <div class="footer-heading">Shopcart E-Commerce</div>
+                <div class="footer-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sapiente ullam odio libero facere
+                    fuga rem doloribus?
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-heading">Quick Links</div>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-heading">Shop Now</div>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Trending Products</a></li>
+                        <li><a href="#">New Arrival Products</a></li>
+                        <li><a href="#">Featured Products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-heading">Reach Us</div>
+                <div class="footer-content">
+                    <ul>
+                        <li>I-43 Lal Kuan New Delhi - 110044</li>
+                        <li>+91 - 8447337491</li>
+                        <li>Teachmaind0007@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-buttom">
+            2025 - ShopCart - E-Commerce. All right reserved.
+        </div>
+    </footer>
+
+    <!-- JS link -->
+     <script src="more.js"></script>
+     <script src="productdital.js"></script>
+</body>
+
+</html>
