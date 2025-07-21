@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        textarea {
+            width: 300px;
+            height: 150px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <input list="li" onselect="alert('hello')">
+    <datalist id="li">
+        <option value="brouser"></option>
+        <option value="edgre"></option>
+        <option value="mango"></option>
+        <option value="applae"></option>
+        <option value="guavava"></option>
+    </datalist> -->
+
+
+
+    <textarea name="typetext" id="typing">
+    </textarea><br>
+    <label for="typing">Word Count: <span id="word"></span></label>
+
+    <div class="box">
+        <input type="text" name="inp" id="input">
+        <button id="inputbtn">submit</button>
+        <p id="show"></p>
+    </div>
+    
+   <button><a href="Imran Alvi_Certificate.pdf" target="_blank">click</a></button>
+
+    <!-- <iframe src="Imran Alvi_Certificate.pdf" width="100%" height="600px"></iframe> -->
+
+
+    <script>
+
+        let typ = document.getElementById("typing");
+        let word = document.getElementById("word");
+        typ.addEventListener("input", function () {
+            let val = typ.value.length;
+            console.log(val);
+            //  const currentLength = textarea.value.length;
+            word.innerHTML = val;
+        })
+        word.innerHTML = "hello world !";
+
+        let searchBtn = document.getElementById("inputbtn");
+        searchBtn.addEventListener("click", function () {
+            let search = document.getElementById("input").value;
+            let show = document.getElementById("show");
+            let d = "";
+
+            if (isNaN(search)) {
+                d = "Not a number"
+                console.log("not a number");
+            }
+            else {
+                d = search
+                console.log(d);
+            }
+            show.innerHTML = d
+
+        })
+
+    </script>
+</body>
+
+</html>

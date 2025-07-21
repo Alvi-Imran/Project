@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayData</title>
+    <style>
+
+        #insertData{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            background-color: orangered;
+            display: none;
+            /* flex-wrap: wrap; */
+
+        }
+
+        #box{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            background-color: aqua;
+        }
+
+        .box-img{
+            width: 100%;
+            height: 200px;
+            /* background-color: blue; */
+        }
+
+        .box-img img{
+            width: 160px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button id="mobBtn">mobile</button>
+
+    <div id="insertData"></div>
+   
+    <div id="box"></div>
+
+    <script>
+        const Data = [
+    {
+        id: "1",
+        img: "pixel-8a.webp",
+        brand: "Iphone",
+        model: "Apple Iphone 16",
+        specification: "Blue, 126GB",
+        price: "₹12,900",
+    },
+    {
+        id: "1",
+        img: "pixel-8a.webp",
+        brand: "Iphone",
+        model: "Apple Iphone 16",
+        specification: "Blue, 126GB",
+        price: "₹100,900",
+    },
+    {
+        id: "1",
+        img: "pixel-8a.webp",
+        brand: "Iphone",
+        model: "Apple Iphone 16",
+        specification: "Blue, 126GB",
+        price: "₹84,900",
+    },
+    
+    ]
+
+
+    let insertData = document.getElementById("insertData");
+    let btn = document.getElementById("mobBtn");
+
+    let cardBox = document.getElementById("box");
+    let card = "";
+    Data.forEach((val,key)=>{
+        card += `
+        <div class="box-img">
+            <img src="${val.img}" alt="">
+        </div>
+        <div class="box-detail">
+            <h2>${val.brand}</h2>
+            <p>${val.model}</p>
+            <p>${val.specification}</p>
+            <p>${val.price}</p>
+        </div>`
+    })
+    cardBox.innerHTML = card;
+    btn.addEventListener("click",function(){
+        cardBox.style.display = "none";
+        insertData.style.display = "flex";
+        insertData.innerHTML = card;
+    })
+
+
+    </script>
+</body>
+</html>
