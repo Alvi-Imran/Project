@@ -29,19 +29,10 @@ function prev() {
 
 // toggle button
 const toggle = document.querySelector(".bi-list");
+const navALL = document.querySelector(".nav-all-cover");
 
 toggle.addEventListener("click",function(){
-    const navALL = document.querySelector(".nav-all-cover");
-    if(navALL.style.display=== "none"){
-        navALL.style.display= "block";
-        containerBox.style.filter = "blur(20px)";
-        nav2.style.filter = "blur(20px)";
-    }else{
-        navALL.style.display= "none"
-        containerBox.style.filter = "blur(0px)";
-        nav2.style.filter = "blur(0px)";
-    }
-       
+        navALL.classList.toggle('active'); 
 })
 
 
@@ -411,7 +402,7 @@ function quantityBtn(index, update){
 // click Cart icon function
 function Cartfun() {
     nav2.style.display = "none";
-    // cartHead.style.display = "none";
+    navALL.classList.toggle('active'); 
     containerBox.style.display = "none"
     cartinsrt.style.display = "block";
     InsertJsData.style.display = "none";

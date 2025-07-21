@@ -422,6 +422,10 @@ footer {
         background-color:#263e57;
     }
 
+    .nav-all-cover.active {
+        display: flex;
+    }
+
     .login {
         width: 100%;
         height: 35px;
