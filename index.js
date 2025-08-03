@@ -1,7 +1,7 @@
 // tpyed javascript code
 {
   var typed = new Typed('#typed', {
-    strings: ['IMRAN ALVI', 'WEB DESINER'],
+    strings: ['Imran Alvi', 'web designer'],
     typeSpeed: 150,
     backspeed:150,
     loop:true
@@ -58,5 +58,6 @@
 
 
 }
+
 
 
