@@ -18,7 +18,7 @@ let a = document.querySelectorAll(".all-links a");
 
 toggle.addEventListener("click", function () {
   if (link.style.display === "none") {
-    link.style.display = "block"
+    link.style.display = "flex"
   }
   else {
     link.style.display = "none"
@@ -27,7 +27,7 @@ toggle.addEventListener("click", function () {
 
 for (let i = 0; i < a.length; i++) {
   a[i].addEventListener("click", function () {
-    if (link.style.display === "block") {
+    if (link.style.display === "flex") {
       link.style.display = "none"
     }
   })
