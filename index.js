@@ -18,17 +18,17 @@ let a = document.querySelectorAll(".all-links a");
 
 toggle.addEventListener("click", function () {
   if (link.style.display === "none") {
-    link.style.display = "flex"
+    link.style.display = "flex";
   }
   else {
-    link.style.display = "none"
+    link.style.display = "none";
   }
 })
 
 for (let i = 0; i < a.length; i++) {
   a[i].addEventListener("click", function () {
     if (link.style.display === "flex") {
-      link.style.display = "none"
+      link.style.display = "none";
     }
   })
 }
