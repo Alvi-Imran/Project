@@ -1,5 +1,4 @@
 // it is search button function use//
-
 function search(){
     document.getElementById("search-element").style = "display:block";
 }
@@ -41,30 +40,28 @@ function move_right(){
 
 // three  slider function 
 const slid3 = document.getElementById("three-slide");
+
 let widths = 150;
 let paddings = 10;
-
-function prevbtn1(){
-    console.log("ji");
+function prevbtn1(){    
+    console.log(widths + paddings);
     
     slid3.scrollLeft -= widths + paddings;
 }
 function nextbtn1(){
-    console.log("hsjsjf")
-    slid3.scrollLeft -= widths + paddings;
+    slid3.scrollLeft += widths + paddings;
 }
 
 // start for slider
 const slid4 = document.getElementById("member-items");
 let wid4 = 200;
 let pad4 = 10;
-function moveleft(){
-    slid2.scrollLeft -= wid4 + pad4;
+function move_left4(){   
+    slid4.scrollLeft -= wid4 + pad4;
 }
 
-function moveright(){
-    slid2.scrollLeft += wid4 + pad4;
-
+function move_right4(){
+    slid4.scrollLeft += wid4 + pad4;
 }
 
 
