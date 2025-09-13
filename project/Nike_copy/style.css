@@ -22,6 +22,11 @@ nav {
     background-color: #eaedf0;
 }
 
+.smoll-dis,
+.nike-logo {
+    display: none;
+}
+
 .logo {
     width: 5%;
     height: 40px;
@@ -80,6 +85,14 @@ nav {
 .nav-tow {
     width: 100%;
     height: 60px;
+}
+
+.close-btn,
+#small-display {
+    display: none;
+}
+
+#nav-two-cover {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,20 +110,79 @@ nav {
 
 #nav2-list ul {
     display: flex;
-    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
     cursor: pointer;
 }
 
-#nav2-list ul,
-li {
+#nav2-list ul li {
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
     margin: 0 10px;
 }
+
+/* list down hover */
+.down-links {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 92px;
+    left: 0;
+    display: none;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.nav2-links-cover {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 40px;
+}
+
+.nav2-links-cover ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.nav2-links-cover ul p {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.nav2-links-cover li {
+    font-size: 12px;
+    text-align: left;
+    color: rgba(92, 92, 92, 0.753);
+}
+
+li:hover .featured {
+    display: flex;
+}
+
+li:hover #men {
+    display: flex;
+}
+
+li:hover .women {
+    display: flex;
+}
+
+li:hover .kids {
+    display: flex;
+}
+
+li:hover .sale {
+    display: flex;
+}
+
 
 /* secend nav icon-bar */
 .icon-bar {
@@ -213,66 +285,6 @@ li {
     /* text-align: center; */
 }
 
-.down-links {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    display: none;
-    background-color: #ffffff;
-    z-index: 10;
-}
-
-.nav2-links-cover {
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto auto auto auto;
-    position: relative;
-    top: 40px;
-}
-
-.nav2-links-cover ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.nav2-links-cover ul p {
-    margin-left: 10px;
-    font-size: 0.9rem;
-}
-
-.nav2-links-cover li {
-    opacity: 0.7;
-    font-size: 0.8em;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0;
-}
-
-li:hover .featured {
-    display: flex;
-}
-
-li:hover #men {
-    display: flex;
-}
-
-li:hover .women {
-    display: flex;
-}
-
-li:hover .kids {
-    display: flex;
-}
-
-li:hover .sale {
-    display: flex;
-}
-
 /* END  nav tow css */
 
 
@@ -338,49 +350,55 @@ li:hover .sale {
 /* start featuerd shoping */
 #featured-shoping {
     width: 90%;
-    height: 80vh;
+    height: 100%;
     margin: 0px auto;
 }
 
 #featured-shoping h2 {
-    margin: 0 10px;
+    margin: 0 20px;
     font-size: 1.5rem;
 }
 
 .shoping-cover {
     width: 100%;
-    height: 80%;
+    height: 50%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .shoping-box {
     width: 300px;
-    height: 650px;
+    height: 400px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .shoping-img {
+    width: 100%;
+    height: 100%;
     position: absolute;
 }
 
+.shoping-img img {
+    width: 100%;
+    height: auto;
+}
+
 #li-text {
-    width: 300px;
-    height: 50%;
     position: absolute;
+    bottom: 50px;
     z-index: 1;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-    padding-left: 20px;
-}
+    font-size: 1rem;
 
-#li-text h3 {
-    margin-left: 10px;
 }
-
 
 #li-text button {
     width: 100px;
@@ -525,21 +543,20 @@ li:hover .sale {
 /* end css  slider two  */
 
 
-/* start css don't miss */
-#miss{
+/* start css miss */
+#miss {
     width: 90%;
     height: 100%;
     margin: 50px auto;
 }
 
-#miss h2{
+#miss h2 {
     font-size: 1.5rem;
 }
 
 .miss-cover {
     width: 100%;
     height: 70vh;
-    background-color: salmon;
     display: flex;
     margin: 20px 0;
 
@@ -642,10 +659,10 @@ li:hover .sale {
 #slider-for {
     margin-top: 30px;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
-.slider-for-btn{
+.slider-for-btn {
     margin-right: 23px;
 }
 
@@ -696,53 +713,14 @@ li:hover .sale {
     border: none;
     border-radius: 20px;
 }
-
 /* end  of css slider for */
 
-/* start css Collection */
-#Collection {
+hr{
     width: 90%;
-    height: 240px;
+    height: 1px;
     margin: 0 auto;
-    display: flex;
-    transition: all 0.7s;
+    color: #b3b2b2;
 }
-
-.container {
-    width: 300px;
-    height: auto;
-    margin: 0px 5px;
-    overflow: hidden;
-}
-
-.container h3 {
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-.container ul {
-    list-style: none;
-    margin: 10px 0;
-
-}
-
-.container li {
-    padding: 15px 0;
-    cursor: pointer;
-    font-size: 1rem;
-    opacity: 0.5;
-}
-
-#Collection:hover {
-    height: 300px;
-}
-
-hr {
-    width: 90%;
-    margin: 70px auto;
-}
-
-/* end css Collection */
 
 footer {
     width: 90%;
@@ -758,8 +736,9 @@ footer {
 }
 
 .footer h3 {
-    font-size: 1.4rem;
-    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 0px;
 }
 
 .footer ul {
@@ -769,10 +748,11 @@ footer {
 
 .footer li a {
     text-decoration: none;
-    color: black;
-    opacity: 0.5;
-    font-size: 1rem;
-    line-height: 40px;
+    color: #696969;
+    /* opacity: 0.7; */
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 30px;
 }
 
 footer button {
@@ -780,13 +760,13 @@ footer button {
     height: 50px;
     font-size: 16px;
     margin-left: 5px;
-    opacity: 0.8;
+    font-weight: 600;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
-
 /* end css first footer */
+
 
 
 /* === last page footer */
@@ -795,6 +775,11 @@ footer button {
     height: 50px;
     text-align: center;
 }
+
+
+
+
+
 
 /* Media query  for mobile devices */
 
