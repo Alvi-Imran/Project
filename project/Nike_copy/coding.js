@@ -26,11 +26,10 @@ function  next(){
 
 // tow slider function 
 const slid2 = document.getElementById("slider-2");
-
 let wid = 200;
 let pad = 10;
 function move_left(){
-    slid2.scrollLeft -= wid + pad;
+    slid2.scrollLeft -= wid + pad;   
 }
 
 function move_right(){
@@ -66,5 +65,29 @@ function move_right4(){
 
 
 
+// small screen size 425px 
+let nav_two = document.querySelector(".nav-tow");
+let Body = document.querySelector("body");
 
+// open nav menu
+function openmenu(){
+    Body.style.overflowY = "hidden"
+    nav_two.style.display = "flex";
+}
 
+// close nav menu
+function closeNav(){
+    nav_two.style.display = "none";
+    Body.style.overflowY = "visible"
+}
+
+// footer help section ul hiden and show
+$(document).ready(function(){
+    $(".toggle-ul").click(function(){
+        if(window.matchMedia("(max-width:768px)").matches){
+            $(this).next(".footer-ul").toggle()
+        }
+    })
+})
+
+// console.log(window.matchMedia("(max-width:425px)").matches);
