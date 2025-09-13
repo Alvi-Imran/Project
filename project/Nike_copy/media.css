@@ -1,0 +1,630 @@
+/* media query max 425px */
+@media (max-width:425px) {
+    body.no-scroll {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    /* --- nav one ---- */
+    nav {
+        background-color: #f5f4f4;
+        height: 60px;
+    }
+
+
+    #nav2-img,
+    .nav-link,
+    .icon-bar {
+        display: none;
+    }
+
+    .smoll-dis,
+    .nike-logo {
+        display: block;
+    }
+
+    .smoll-dis ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .smoll-dis li i {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    /* end nav one */
+
+    .nav-tow {
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        right: 0;
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+        overflow-y: scroll;
+        display: none;
+    }
+
+    .jordan-logo,
+    #nav2-list,
+    #nav-two-cover {
+        display: none;
+    }
+
+    #small-display {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .close-btn {
+        width: 100%;
+        height: 40px;
+        border-radius: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+    }
+
+    .close-btn button {
+        position: relative;
+        left: 100px;
+        width: 35px;
+        height: 35px;
+
+    }
+
+    .close-btn button i {
+        font-size: 1.4rem;
+    }
+
+
+    .list-ul {
+        width: 100%;
+        height: 30%;
+    }
+
+    .list-ul:nth-child(2) li {
+        font-size: 1.4rem;
+    }
+
+
+    .small-logo {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .jordan-logo-small {
+        width: 25%;
+        height: auto;
+    }
+
+    .small-text {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .small-login-btn {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .small-login-btn button {
+        width: 40%;
+        height: 35px;
+        border-radius: 30px;
+        border: 1px solid black;
+        margin: 5px;
+    }
+
+    .small-icons li span {
+        font-size: 0.9rem;
+        margin-left: 5px;
+    }
+
+
+
+    /* ---  video section  --- */
+    .video-contant h1 {
+        font-size: 5rem;
+    }
+
+    /* --- featuerd section --- */
+    .shoping-cover {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .shoping-box {
+        width: 85%;
+        height: 300px;
+    }
+
+    .shoping-img img {
+        height: 100%;
+    }
+
+    #li-text {
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    /* ---  shoes slider-1  --- */
+    #shoes-slider-1 {
+        margin-top: 40px;
+    }
+
+    /* ---  miss section cover --- */
+    .miss-cover {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    /* --- all header-btn and slider button section --- */
+    .header-btn {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .header-btn h2 {
+        font-size: 1.1rem;
+    }
+
+    .slider-button {
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .slider-button button {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* end slider button */
+
+    /* --- 1 carousel  */
+    .all-image-div {
+        height: 400px;
+        padding: 20px 0;
+    }
+
+    .item {
+        height: 350px;
+    }
+
+    .item img {
+        width: 350px;
+        height: 170px;
+    }
+
+    /* --- 2 carousel -- */
+    #slider-two h2 {
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
+    #prevbtn {
+        left: 30px;
+    }
+
+    #nextbtn {
+        right: 20px;
+    }
+
+    /* --- miss section */
+    #miss h2 {
+        font-size: 1.1rem;
+    }
+
+    /* ---- 3 carousel ----  */
+    .slider-three-image {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .item-3 {
+        width: 350px;
+        height: 250px;
+    }
+
+    /* --- 4 carousel ---  */
+    #slider-for {
+        margin: 0;
+        height: 85%;
+    }
+
+    .member-item {
+        margin-top: 20px;
+        height: 350px;
+        gap: 10px;
+    }
+
+    .item-4 {
+        width: 300px;
+        height: 330px;
+    }
+
+    .item-4 img {
+        width: 300px;
+        height: 330px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 70px;
+    }
+
+    .footer {
+        height: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    .locationbtn {
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    .footer h3 {
+        font-size: 1rem;
+    }
+
+    .footer-ul{
+        width: 100%;
+        height: 100%;
+        /* background-color: salmon; */
+        display: none;
+    }
+
+    .locationbtn button {
+        /* background-color: salmon; */
+        padding: 0;
+        margin-left: -70px;
+    }
+
+    #end-page-footer {
+        height: 40px;
+        text-align: left;
+        padding: 10px 20px;
+        margin-top: 50px;
+    }
+}
+
+/* media query min-width:426px and max-width:768px */
+@media (min-width:426px) and (max-width:768px) {
+     body.no-scroll {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    /* --- nav one ---- */
+    nav {
+        background-color: #f5f4f4;
+        height: 60px;
+    }
+
+
+    #nav2-img,
+    .nav-link,
+    .icon-bar {
+        display: none;
+    }
+
+    .smoll-dis,
+    .nike-logo {
+        display: block;
+    }
+
+    .smoll-dis ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .smoll-dis li i {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 10vw;
+        /* background-color: salmon; */
+    }
+
+    .logo img{
+        width: 100%;
+    }
+
+    /* end nav one */
+
+    .nav-tow {
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        right: 0;
+        width: 300px;
+        min-height: 100vh;
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+        overflow-y: scroll;
+        display: none;
+    }
+
+    .jordan-logo,
+    #nav2-list,
+    #nav-two-cover {
+        display: none;
+    }
+
+    #small-display {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .close-btn {
+        width: 100%;
+        height: 40px;
+        border-radius: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+    }
+
+    .close-btn button {
+        position: relative;
+        left: 100px;
+        width: 35px;
+        height: 35px;
+
+    }
+
+    .close-btn button i {
+        font-size: 1.4rem;
+    }
+
+
+    .list-ul {
+        width: 100%;
+        height: 30%;
+    }
+
+    .list-ul:nth-child(2) li {
+        font-size: 1.4rem;
+    }
+
+
+    .small-logo {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .jordan-logo-small {
+        width: 25%;
+        height: auto;
+    }
+
+    .small-text {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .small-login-btn {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .small-login-btn button {
+        width: 40%;
+        height: 35px;
+        border-radius: 30px;
+        border: 1px solid black;
+        margin: 5px;
+    }
+
+    .small-icons li span {
+        font-size: 0.9rem;
+        margin-left: 5px;
+    }
+
+
+
+    /* ---  video section  --- */
+    .video-contant h1 {
+        font-size: 5rem;
+    }
+
+    /* --- featuerd section --- */
+    .shoping-cover {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .shoping-box {
+        width: 80%;
+        height: 350px;
+    }
+
+    .shoping-img img {
+        height: 100%;
+    }
+
+    #li-text {
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    /* ---  shoes slider-1  --- */
+    #shoes-slider-1 {
+        margin-top: 40px;
+    }
+
+    /* ---  miss section cover --- */
+    .miss-cover {
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .miss-cover img{
+        width: 80vw;
+        height: 80vh;
+    }
+
+    /* --- all header-btn and slider button section --- */
+    .header-btn {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .header-btn h2 {
+        font-size: 1.1rem;
+    }
+
+    .slider-button {
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .slider-button button {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* end slider button */
+
+    /* --- 1 carousel  */
+    .all-image-div {
+        height: 400px;
+        padding: 20px 0;
+    }
+
+    .item {
+        height: 350px;
+    }
+
+    .item img {
+        width: 350px;
+        height: 170px;
+    }
+
+    /* --- 2 carousel -- */
+    #slider-two h2 {
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
+    #prevbtn {
+        left: 30px;
+    }
+
+    #nextbtn {
+        right: 20px;
+    }
+
+    /* --- miss section */
+    #miss h2 {
+        font-size: 1.1rem;
+    }
+
+    /* ---- 3 carousel ----  */
+    .slider-three-image {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .item-3 {
+        width: 350px;
+        height: 250px;
+    }
+
+    /* --- 4 carousel ---  */
+    #slider-for {
+        margin: 0;
+        height: 85%;
+    }
+
+    .member-item {
+        margin-top: 20px;
+        height: 350px;
+        gap: 10px;
+    }
+
+    .item-4 {
+        width: 300px;
+        height: 330px;
+    }
+
+    .item-4 img {
+        width: 300px;
+        height: 330px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 70px;
+    }
+
+    .footer {
+        height: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    .locationbtn {
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    .footer h3 {
+        font-size: 1rem;
+    }
+
+    .footer-ul{
+        width: 100%;
+        height: 100%;
+        /* background-color: salmon; */
+        display: none;
+    }
+
+    .locationbtn button {
+        /* background-color: salmon; */
+        padding: 0;
+        margin-left: -70px;
+    }
+
+    #end-page-footer {
+        height: 40px;
+        text-align: left;
+        padding: 10px 20px;
+        margin-top: 50px;
+    }
+}
