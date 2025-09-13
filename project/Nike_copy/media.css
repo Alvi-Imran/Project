@@ -1,0 +1,624 @@
+@media (max-width: 425px) {
+    nav {
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        padding: 0 30px;
+        position: relative;
+    }
+
+    .logo a img {
+        width: 80px;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .nav-links {
+        width: 100%;
+        height: 95vh;
+        background-color: #fdd8a0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 50px;
+        right: 0%;
+    }
+
+
+    .all-links ul {
+        flex-direction: column;
+        transition: all 3s;
+    }
+
+    .all-links li a {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    /* hero section */
+
+    .hero-section {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .hero-cover {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20;
+    }
+
+    .hero-imge {
+        width: 100%;
+        height: 50%;
+    }
+
+    .hero-content {
+        width: 100%;
+        height: 30%;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* end hero section css */
+
+
+
+    /* -- about content -- */
+    .about-cover {
+        flex-direction: column;
+    }
+
+    .about-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* skill  */
+    .skill-cover {
+        flex-direction: column-reverse;
+    }
+
+    .skill-img {
+        width: 100%;
+    }
+
+    .skill-box {
+        width: 100%;
+    }
+
+    /* project section */
+
+    .pro-cover {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px 0px;
+        padding: 15px 0;
+    }
+
+    .pro-box {
+        width: 90%;
+        max-height: 200px;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .pro-img {
+        width: 40%;
+        height: auto;
+    }
+
+    .pro-img img {
+        width: 80%;
+        height: auto;
+    }
+
+    .pro-contant {
+        width: 60%;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    /* footer */
+    #contact {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-box {
+        height: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .footer-content {
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .contact-heading {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-cover {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .footerbox {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-links {
+        margin-top: 25px;
+        flex-wrap: wrap;
+        gap: 20px 0px;
+    }
+
+    .contact-form textarea,
+    input {
+        max-width: 90vw;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    .logo a img {
+        width: 80px;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle i {
+        font-size: 26px;
+    }
+
+     .nav-links {
+        width: 100%;
+        height: 95vh;
+        background-color: #fdd8a0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 50px;
+        right: 0%;
+    }
+
+
+    .all-links ul {
+        flex-direction: column;
+        transition: all 3s;
+    }
+
+    .all-links li a {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    /* hero section */
+    .hero-section {
+        height: auto;
+    }
+
+    .hero-cover {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero-imge {
+        /* padding: 40px 0; */
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* end hero section css */
+
+    /* -- about content -- */
+    .about-cover {
+        flex-direction: column;
+    }
+
+    .about-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-about {
+        width: 70%;
+        height: 50%;
+    }
+
+    /* skill  */
+    .skill-cover {
+        flex-direction: column-reverse;
+    }
+
+    .skill-img {
+        width: 100%;
+    }
+
+    .skill-box {
+        width: 100%;
+    }
+
+    /* project section */
+
+    .pro-cover {
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: nowrap; */
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .pro-box {
+        max-width: 30%;
+        min-width: 150px;
+        gap: 10px;
+        border-radius: 15px;
+    }
+
+    .pro-img {
+        width: 50%;
+        height: auto;
+    }
+
+    .pro-img img {
+        width: 70%;
+        height: auto;
+    }
+
+    .pro-contant {
+        width: 100%;
+        /* background-color: sandybrown; */
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    /* .pro-contant button{
+        max-width: 100px;
+    } */
+
+
+    /* footer */
+    #contact {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 25, 0);
+    }
+
+    .contact-box {
+        height: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .footer-content {
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .contact-heading {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-cover {
+        text-align: center;
+    }
+
+    .footerbox {
+        width: 50%;
+        height: auto;
+    }
+
+    .social-links {
+        margin-top: 25px;
+        flex-wrap: wrap;
+        gap: 20px 0px;
+    }
+
+    .contact-form textarea,
+    input {
+        max-width: 90vw;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+
+    nav {
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 40px;
+        align-content: center;
+    }
+
+    .logo a img {
+        width: 100%;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .toggle i {
+        font-size: 26px;
+    }
+
+    .nav-links {
+        width: 350px;
+        height: 50px;
+    }
+
+
+    .all-links ul {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* end nav css */
+
+
+    /* hero section */
+    .hero-section {
+        height: 90vh;
+    }
+
+    .hero-imge {
+        width: 50%;
+        height: auto;
+    }
+
+    .hero-content {
+        width: 50%;
+        height: auto;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* end hero section css */
+
+    /* -- about content -- */
+    .about-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-about {
+        width: 70%;
+        height: 50%;
+    }
+
+    /* skill  */
+    .skill-img {
+        width: 50%;
+    }
+
+    .skill-box {
+        width: 50%;
+    }
+
+    /* project section */
+    .pro-cover {
+        justify-content: center;
+        align-items: center;
+        gap: 15px 15px;
+        padding: 20px 10px;
+    }
+
+    .pro-box {
+        width: 30%;
+    }
+
+    .pro-img {
+        width: 50%;
+        height: auto;
+    }
+
+    .pro-img img {
+        width: 50%;
+        height: auto;
+    }
+
+    .pro-contant {
+        width: 60%;
+        height: auto;
+        text-align: center;
+    }
+
+    /* footer */
+    #contact {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-box {
+        width: 95%;
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .contact-heading {
+        width: 100%;
+        height: auto;
+    }
+
+    .footerbox {
+        min-width: 50%;
+        height: auto;
+    }
+
+    .social-links {
+        margin-top: 25px;
+        flex-wrap: wrap;
+        gap: 20px 0px;
+    }
+
+    .contact-form textarea input {
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    nav {
+        width: 100%;
+        height: 60px;
+    }
+
+
+    .logo {
+        width: 100px;
+        height: 40px;
+        align-content: center;
+    }
+
+    .logo a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .logo a img {
+        width: 120px;
+    }
+
+
+    .nav-links {
+        width: 350px;
+        height: 40px;
+    }
+
+    .all-links {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: black;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .nav-links a:hover {
+        color: #bb5d2d;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    /* end nav */
+
+
+
+    /* --- hero section */
+    .hero-section {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .hero-cover {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-content {
+        font-size: 2rem;
+    }
+
+    /*end hero section  */
+
+    /* about section  */
+    #about {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .about-contant p {
+        font-size: 1.1rem;
+
+    }
+
+    /* end about section */
+
+    /* skill section */
+    .skil {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* end  skill section */
+
+    /* project section */
+
+    #project {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pro-box {
+        max-width: 250px;
+        height: auto;
+        gap: 20px;
+    }
+
+    .pro-contant button {
+        height: 70px;
+    }
+
+    /* end project section */
+
+    /* footer css */
+    #contac {
+        width: 100%;
+        height: 90vh;
+    }
+
+}
