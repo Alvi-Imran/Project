@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,8 @@
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- jquery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- link css file -->
     <link rel="stylesheet" href="style.css">
@@ -18,13 +18,15 @@
     <!-- tailwind css cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- media query -->
-     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="media.css">
 </head>
+
 <body>
     <!-- nike first nav bar -->
     <nav>
         <div class="logo flex items-center justify-center">
-            <img src="jordan image.png" alt="jordan" width="25px">
+            <img src="jordan image.png" alt="jordan" width="25px" class="jordan-logo">
+            <img src="nike logo.png" alt="nike logo" class="nike-logo">
         </div>
         <div class="nav-link">
             <ul>
@@ -46,296 +48,350 @@
                 <li>Sign In</li>
             </ul>
         </div>
+        <div class="smoll-dis">
+            <ul>
+                <li>
+                    <i class="bi bi-search" onclick="search()"></i>
+                </li>
+                <li>
+                    <i class="bi bi-bag"></i>
+                </li>
+                <li>
+                    <i class="bi bi-list-nested" onclick="openmenu()"></i>
+                    
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- nav first end -->
 
     <!-- secend nav bar start -->
     <div class="nav-tow">
-        <div id="nav2-img" class="flex items-center justify-center">
-            <img src="nike logo.png" alt="nike logo">
-        </div>
-        <div id="nav2-list">
-            <ul>
-                <li>New & Featured
-                    <div class="featured down-links">
-                        <div class="nav2-links-cover">
-                            <ul>
-                                <p>New & Featured</p>
-                                <li>New arrivals</li>
-                                <li>Latest Shoes</li>
-                                <li>Latest Clothing</li>
-                                <li>SNKRS Launch Calendar</li>
-                                <li>Get 'Em in SNKRS</li>
-                                <li>Customise with Nike By You</li>
-                                <li>Bestsellers</li>
-                                <li>Member Exclusive</li>
-                                <li>Top Kicks under ₹8000.00</li>
-                            </ul>
-                            <ul>
-                                <p>Shop Icons</p>
-                                <li>Air Force 1</li>
-                                <li>Aia Jordan</li>
-                                <li>Air Max</li>
-                                <li>Dunk</li>
-                                <li>Cortez</li>
-                                <li>Blazer</li>
-                                <li>Pegasus</li>
-                            </ul>
-                            <ul>
-                                <p>New For Men</p>
-                                <li>Shose</li>
-                                <li>Clothing</li>
-                                <li>Accessories</li>
-                                <li>Shop All New</li>
-                            </ul>
-                            <ul>
-                                <p>New For Women</p>
-                                <li>Shoes</li>
-                                <li>Clothing</li>
-                                <li>Accessories</li>
-                                <li>Shop All New</li>
-                            </ul>
-                            <ul>
-                                <p>New for Kids</p>
-                                <li>Shoes</li>
-                                <li>Clothing</li>
-                                <li>Accessories</li>
-                                <li>Shop All New</li>
-                            </ul>
+        <div id="nav-two-cover">
+            <div id="nav2-img" class="flex items-center justify-center">
+                <img src="nike logo.png" alt="nike logo" class="nav2-nike-logo">
+            </div>
+            <div id="nav2-list">
+                <ul>
+                    <li>New & Featured
+                        <div class="featured down-links">
+                            <div class="nav2-links-cover">
+                                <ul>
+                                    <p>New & Featured</p>
+                                    <li>New arrivals</li>
+                                    <li>Latest Shoes</li>
+                                    <li>Latest Clothing</li>
+                                    <li>SNKRS Launch Calendar</li>
+                                    <li>Get 'Em in SNKRS</li>
+                                    <li>Customise with Nike By You</li>
+                                    <li>Bestsellers</li>
+                                    <li>Member Exclusive</li>
+                                    <li>Top Kicks under ₹8000.00</li>
+                                </ul>
+                                <ul>
+                                    <p>Shop Icons</p>
+                                    <li>Air Force 1</li>
+                                    <li>Aia Jordan</li>
+                                    <li>Air Max</li>
+                                    <li>Dunk</li>
+                                    <li>Cortez</li>
+                                    <li>Blazer</li>
+                                    <li>Pegasus</li>
+                                </ul>
+                                <ul>
+                                    <p>New For Men</p>
+                                    <li>Shose</li>
+                                    <li>Clothing</li>
+                                    <li>Accessories</li>
+                                    <li>Shop All New</li>
+                                </ul>
+                                <ul>
+                                    <p>New For Women</p>
+                                    <li>Shoes</li>
+                                    <li>Clothing</li>
+                                    <li>Accessories</li>
+                                    <li>Shop All New</li>
+                                </ul>
+                                <ul>
+                                    <p>New for Kids</p>
+                                    <li>Shoes</li>
+                                    <li>Clothing</li>
+                                    <li>Accessories</li>
+                                    <li>Shop All New</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>Men
-                    <div class="down-links" id="men">
-                        <div class="nav2-links-cover">
-                            <ul>
-                                <p>Featured</p>
-                                <li>New Releases</li>
-                                <li>Bestsellers</li>
-                                <li>Member Exclusive</li>
-                                <li>Jordan</li>
-                                <li>Lifestyle Running</li>
-                                <li>Customise with Nike By You</li>
-                                <li>Sale</li>
-                                <li>Running Shoes Finder</li>
-                            </ul>
-                            <ul>
-                                <p>Shoes</p>
-                                <li>All Shoes</li>
-                                <li>Newest Sneakers</li>
-                                <li>Jordan</li>
-                                <li>Lifestyle</li>
-                                <li>Running</li>
-                                <li>Gym and Training</li>
-                                <li>Basketball</li>
-                                <li>Football</li>
-                            </ul>
-                            <ul>
-                                <p>Clothing</p>
-                                <li>All Clothing</li>
-                                <li>Tops and T-Shirts</li>
-                                <li>Shorts</li>
-                                <li>Pants and Leggings</li>
-                                <li>Hoodies and Sweatshrits</li>
-                                <li>Jackts and Gilets</li>
-                                <li>Jersey and Kidstd</li>
-                                <li>Jordan</li>
-                            </ul>
-                            <ul>
-                                <p>Shop By Sport</p>
-                                <li>Running</li>
-                                <li>Basketball</li>
-                                <li>Football</li>
-                                <li>Golf</li>
-                                <li>Tennis</li>
-                                <li>Gym and Training</li>
-                                <li>Yoga</li>
-                                <li>Skateboarding</li>
-                            </ul>
+                    </li>
+                    <li>Men
+                        <div class="down-links" id="men">
+                            <div class="nav2-links-cover">
+                                <ul>
+                                    <p>Featured</p>
+                                    <li>New Releases</li>
+                                    <li>Bestsellers</li>
+                                    <li>Member Exclusive</li>
+                                    <li>Jordan</li>
+                                    <li>Lifestyle Running</li>
+                                    <li>Customise with Nike By You</li>
+                                    <li>Sale</li>
+                                    <li>Running Shoes Finder</li>
+                                </ul>
+                                <ul>
+                                    <p>Shoes</p>
+                                    <li>All Shoes</li>
+                                    <li>Newest Sneakers</li>
+                                    <li>Jordan</li>
+                                    <li>Lifestyle</li>
+                                    <li>Running</li>
+                                    <li>Gym and Training</li>
+                                    <li>Basketball</li>
+                                    <li>Football</li>
+                                </ul>
+                                <ul>
+                                    <p>Clothing</p>
+                                    <li>All Clothing</li>
+                                    <li>Tops and T-Shirts</li>
+                                    <li>Shorts</li>
+                                    <li>Pants and Leggings</li>
+                                    <li>Hoodies and Sweatshrits</li>
+                                    <li>Jackts and Gilets</li>
+                                    <li>Jersey and Kidstd</li>
+                                    <li>Jordan</li>
+                                </ul>
+                                <ul>
+                                    <p>Shop By Sport</p>
+                                    <li>Running</li>
+                                    <li>Basketball</li>
+                                    <li>Football</li>
+                                    <li>Golf</li>
+                                    <li>Tennis</li>
+                                    <li>Gym and Training</li>
+                                    <li>Yoga</li>
+                                    <li>Skateboarding</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>Women
-                    <div class="women down-links">
-                        <div class="nav2-links-cover">
-                            <ul>
-                                <p>Featured</p><br><br>
-                                <li>New Releases</li>
-                                <li>Bestsellers</li>
-                                <li>Member Exclusive</li>
-                                <li>Jordan</li>
-                                <li>Lifestyle Running</li>
-                                <li>Bra and Legging Duos</li>
-                                <li>Customise with Nike By You</li>
-                                <li>Sale</li>
-                                <li>Find Your Feel - Nike Leggings</li>
-                                <li>Running Shoe Finder</li>
-                                <li>Sustainable Materials</li>
-                            </ul>
-                            <ul>
-                                <p>Shoes</p>
-                                <li>All Shoes</li>
-                                <li>Newest Sneakers</li>
-                                <li>Platform Sneakers</li>
-                                <li>Lifestyle</li>
-                                <li>Jordan</li>
-                                <li>Running</li>
-                                <li>Gym and Training</li>
-                                <li>Sandals and Slides</li>
-                                <li>Basketball</li>
-                                <li>Football</li>
-                                <li>Last Sizes Available</li>
-                                <li>Customise with Nike By You</li>
-                                <li>Top Picks Under ₹ 8 000.00</li>
-                            </ul>
-                            <ul>
-                                <p>Clothing</p>
-                                <li>All Clothing
-                                <li>Performance Essentials</li>
-                                <li>Tops and T-Shirts</li>
-                                <li>Sports Bras</li>
-                                <li>Pants and Leggings</li>
-                                <li>Shorts</li>
-                                <li>Hoodies and Sweatshirts</li>
-                                <li>Jackets and Gilets</li>
-                                <li>Skirts and Dresses</li>
-                                <li>Modest Wear</li>
-                                <li>Nike Maternity</li>
-                                <li>Plus Size</li>
-                            </ul>
-                            <ul>
-                                <p>Shop By Sport</p>
-                                <li>Yoga</li>
-                                <li>Running</li>
-                                <li>Gym and Training</li>
-                                <li>Basketball</li>
-                                <li>Tennis</li>
-                                <li>Golf</li>
-                                <li>Football</li>
-                                <li>Skateboarding</li>
-                            </ul>
-                            <ul>
-                                <p>Accessories and Equipment</p>
-                                <li>All Accessories and Equipment</li>
-                                <li>Bags and Backpacks</li>
-                                <li>Socks</li>
-                                <li>Hats and Headwear</li>
-                            </ul>
-                            <ul>
-                                <p>Shop By Brand</p>
-                                <li>Nike Sportswear</li>
-                                <li>NikeLab</li>
-                                <li>Nike By You</li>
-                                <li>Jordan</li>
-                                <li>ACG</li>
-                                <li>NBA</li>
-                                <li>Nike SB</li>
-                            </ul>
+                    </li>
+                    <li>Women
+                        <div class="women down-links">
+                            <div class="nav2-links-cover">
+                                <ul>
+                                    <p>Featured</p><br><br>
+                                    <li>New Releases</li>
+                                    <li>Bestsellers</li>
+                                    <li>Member Exclusive</li>
+                                    <li>Jordan</li>
+                                    <li>Lifestyle Running</li>
+                                    <li>Bra and Legging Duos</li>
+                                    <li>Customise with Nike By You</li>
+                                    <li>Sale</li>
+                                    <li>Find Your Feel - Nike Leggings</li>
+                                    <li>Running Shoe Finder</li>
+                                    <li>Sustainable Materials</li>
+                                </ul>
+                                <ul>
+                                    <p>Shoes</p>
+                                    <li>All Shoes</li>
+                                    <li>Newest Sneakers</li>
+                                    <li>Platform Sneakers</li>
+                                    <li>Lifestyle</li>
+                                    <li>Jordan</li>
+                                    <li>Running</li>
+                                    <li>Gym and Training</li>
+                                    <li>Sandals and Slides</li>
+                                    <li>Basketball</li>
+                                    <li>Football</li>
+                                    <li>Last Sizes Available</li>
+                                    <li>Customise with Nike By You</li>
+                                    <li>Top Picks Under ₹ 8 000.00</li>
+                                </ul>
+                                <ul>
+                                    <p>Clothing</p>
+                                    <li>All Clothing
+                                    <li>Performance Essentials</li>
+                                    <li>Tops and T-Shirts</li>
+                                    <li>Sports Bras</li>
+                                    <li>Pants and Leggings</li>
+                                    <li>Shorts</li>
+                                    <li>Hoodies and Sweatshirts</li>
+                                    <li>Jackets and Gilets</li>
+                                    <li>Skirts and Dresses</li>
+                                    <li>Modest Wear</li>
+                                    <li>Nike Maternity</li>
+                                    <li>Plus Size</li>
+                                </ul>
+                                <ul>
+                                    <p>Shop By Sport</p>
+                                    <li>Yoga</li>
+                                    <li>Running</li>
+                                    <li>Gym and Training</li>
+                                    <li>Basketball</li>
+                                    <li>Tennis</li>
+                                    <li>Golf</li>
+                                    <li>Football</li>
+                                    <li>Skateboarding</li>
+                                </ul>
+                                <ul>
+                                    <p>Accessories and Equipment</p>
+                                    <li>All Accessories and Equipment</li>
+                                    <li>Bags and Backpacks</li>
+                                    <li>Socks</li>
+                                    <li>Hats and Headwear</li>
+                                </ul>
+                                <ul>
+                                    <p>Shop By Brand</p>
+                                    <li>Nike Sportswear</li>
+                                    <li>NikeLab</li>
+                                    <li>Nike By You</li>
+                                    <li>Jordan</li>
+                                    <li>ACG</li>
+                                    <li>NBA</li>
+                                    <li>Nike SB</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>Kids
-                    <div class="kids down-links">
-                        <div class="nav2-links-cover">
-                            <ul>
-                                <p>Boys' Shoes</p>
-                                <li>All Shoes</li>
-                                <li>Older Boys (7 - 14 years)</li>
-                                <li>Younger Boys (4 - 7 years)</li>
-                                <li>Babies and Toddlers (0 - 4 years)</li>
-                                <li>Lifestyl</li>
-                                <li>Jordan</li>
-                                <li>Running</li>
-                                <li>Basketball</li>
-                                <li>Football</li>
-                                <li>Sandals and Slides</li>
-                            </ul>
-                            <ul>
-                                <p>Girls' Shoes</p>
-                                <li>All Shoes</li>
-                                <li>Older Girls (7 - 14 years)</li>
-                                <li>Younger Girls (4 - 7 years)</li>
-                                <li>Babies and Toddlers (0 - 4 years)</li>
-                                <li>Lifestyle</li>
-                                <li>Jordan</li>
-                                <li>Running</li>
-                                <li>Basketball</li>
-                                <li>Football</li>
-                                <li>Sandals and Slides</li>
-                            </ul>
-                            <ul>
-                                <p>Kids By Age</p>
-                                <li>Older Kids (7 - 14 years)</li>
-                                <li>Younger Kids (4 - 7 years)</li>
-                                <li>Babies & Toddlers (0 - 4 years)</li>
-                            </ul>
-                            <ul>
-                                <p>Boys' Clothing</p>
-                                <li>Tops and T-Shirts</li>
-                                <li>Hoodies and Sweatshirts</li>
-                                <li>Pants and Leggings</li>
-                                <li>Shorts</li>
-                                <li>All Boys' Clothing</li>
-                            </ul>
-                            <ul>
-                                <p>Girls' Clothing</p>
-                                <li>Tops and T-Shirts</li>
-                                <li>Sports Bras</li>
-                                <li>Hoodies and Sweatshirts</li>
-                                <li>Pants and Leggings</li>
-                                <li>Shorts</li>
-                                <li>All Girls' Clothing</li>
-                            </ul>
-                            <ul>
-                                <p>Shop By Sport</p>
-                                <li>Football</li>
-                                <li>Running</li>
-                                <li>Basketball</li>
-                                <li>Gym and Training</li>
-                                <li>Tennis</li>
-                            </ul>
+                    </li>
+                    <li>Kids
+                        <div class="kids down-links">
+                            <div class="nav2-links-cover">
+                                <ul>
+                                    <p>Boys' Shoes</p>
+                                    <li>All Shoes</li>
+                                    <li>Older Boys (7 - 14 years)</li>
+                                    <li>Younger Boys (4 - 7 years)</li>
+                                    <li>Babies and Toddlers (0 - 4 years)</li>
+                                    <li>Lifestyl</li>
+                                    <li>Jordan</li>
+                                    <li>Running</li>
+                                    <li>Basketball</li>
+                                    <li>Football</li>
+                                    <li>Sandals and Slides</li>
+                                </ul>
+                                <ul>
+                                    <p>Girls' Shoes</p>
+                                    <li>All Shoes</li>
+                                    <li>Older Girls (7 - 14 years)</li>
+                                    <li>Younger Girls (4 - 7 years)</li>
+                                    <li>Babies and Toddlers (0 - 4 years)</li>
+                                    <li>Lifestyle</li>
+                                    <li>Jordan</li>
+                                    <li>Running</li>
+                                    <li>Basketball</li>
+                                    <li>Football</li>
+                                    <li>Sandals and Slides</li>
+                                </ul>
+                                <ul>
+                                    <p>Kids By Age</p>
+                                    <li>Older Kids (7 - 14 years)</li>
+                                    <li>Younger Kids (4 - 7 years)</li>
+                                    <li>Babies & Toddlers (0 - 4 years)</li>
+                                </ul>
+                                <ul>
+                                    <p>Boys' Clothing</p>
+                                    <li>Tops and T-Shirts</li>
+                                    <li>Hoodies and Sweatshirts</li>
+                                    <li>Pants and Leggings</li>
+                                    <li>Shorts</li>
+                                    <li>All Boys' Clothing</li>
+                                </ul>
+                                <ul>
+                                    <p>Girls' Clothing</p>
+                                    <li>Tops and T-Shirts</li>
+                                    <li>Sports Bras</li>
+                                    <li>Hoodies and Sweatshirts</li>
+                                    <li>Pants and Leggings</li>
+                                    <li>Shorts</li>
+                                    <li>All Girls' Clothing</li>
+                                </ul>
+                                <ul>
+                                    <p>Shop By Sport</p>
+                                    <li>Football</li>
+                                    <li>Running</li>
+                                    <li>Basketball</li>
+                                    <li>Gym and Training</li>
+                                    <li>Tennis</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>Sale
-                    <div class="sale down-links">
-                        <div class="nav2-links-cover">
-                            <ul>
-                                <p>Sale</p>
-                                <li>Shop All Sale</li>
-                                <li>Shoes Sale </li>
-                                <li>Clothing Sale</li>
-                                <li>Accessories & Equipment Sale</li>
-                            </ul>
-                            <ul>
-                                <p>Men's Sale</p>
-                                <li>Shoes</li>
-                                <li>Clothing</li>
-                            </ul>
-                            <ul>
-                                <p>Women's Sale</p>
-                                <li>Shoes</li>
-                                <li>Clothing</li>
-                            </ul>
-                            <ul>
-                                <p>Kids' Sale</p>
-                                <li>Shoes </li>
-                                <li>Clothing</li>
-                            </ul>
+                    </li>
+                    <li>Sale
+                        <div class="sale down-links">
+                            <div class="nav2-links-cover">
+                                <ul>
+                                    <p>Sale</p>
+                                    <li>Shop All Sale</li>
+                                    <li>Shoes Sale </li>
+                                    <li>Clothing Sale</li>
+                                    <li>Accessories & Equipment Sale</li>
+                                </ul>
+                                <ul>
+                                    <p>Men's Sale</p>
+                                    <li>Shoes</li>
+                                    <li>Clothing</li>
+                                </ul>
+                                <ul>
+                                    <p>Women's Sale</p>
+                                    <li>Shoes</li>
+                                    <li>Clothing</li>
+                                </ul>
+                                <ul>
+                                    <p>Kids' Sale</p>
+                                    <li>Shoes </li>
+                                    <li>Clothing</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>Customise</li>
-                <li>SNKRS</li>
-            </ul>
+                    </li>
+                    <li>Customise</li>
+                    <li>SNKRS</li>
+                </ul>
+            </div>
+            <!-- secend nav icon bar start -->
+            <div class="icon-bar">
+                <i class="bi bi-search" onclick="search()"></i>
+                <a href="heart.html"><i class="bi bi-heart"></i></a>
+                <i class="bi bi-bag"></i>
+            </div>
         </div>
 
+        <!-- small display size icon -->
+        <div id="small-display">
+            <div class="close-btn">
+                <button onclick="closeNav()">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+         
+            <div class="small-list list-ul">
+                <ul>
+                    <li>New & Featured</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Sale</li>
+                    <li>Costomise</li>
+                    <li>SNKRS</li>
+                </ul>
+            </div>
+               <div class="small-logo">
+                <img src="jordan image.png" alt="jordan"  class="jordan-logo-small">
+            </div>
+            <div class="small-text">
+                <h3>Become a Nike Member for the best products, inspiration and stories in sport. </h3>
+                <div class="small-login-btn">
+                    <button>Join Us</button>
+                    <button>Sign in</button>
+                </div>
+            </div>
 
-        <!-- secend nav icon bar start -->
-        <div class="icon-bar">
-            <i class="bi bi-search" onclick="search()"></i>
-            <a href="heart.html"><i class="bi bi-heart"></i></a>
-            <i class="bi bi-bag"></i>
+            <div class="small-icons list-ul">    
+                <ul>
+                    <li><i class="bi bi-question-circle"></i> <span>Help</span></li>
+                    <li><i class="bi bi-bag"></i> <span>Bag</span></li>
+                    <li><i class="bi bi-box2"></i> <span>Orders</span></li>
+                    <li><i class="bi bi-shop-window"></i> <span>Find a Store</span></li>
+                </ul>
+            </div>
         </div>
     </div>
     <!-- nav two end -->
@@ -448,8 +504,6 @@
                 </button>
             </div>
         </div>
-
-
         <div id="carousel" class="all-image-div">
             <div class="item">
                 <img src="one-slider-image/air-force-1-07-lx-shoes-Q2sHf3.png" alt="1000X1000">
@@ -538,20 +592,24 @@
 
     <!-- start slider 2  -->
     <div id="slider-two">
-        <div class="header-btn flex justify-between">
+        <div class="header-btn flex justify-between items-center">
             <h2>Classics Spotlight</h2>
-            <button id="prevbtn" class="w-12 h-12 bg-gray-200 flex justify-center items-center" onclick="move_left()">
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px"
-                    fill="none">
-                    <path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path>
-                </svg>
-            </button>
-            <button id="nextbtn" onclick="move_right()" class="w-12 h-12 bg-gray-200 flex justify-center items-center">
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px"
-                    fill="none">
-                    <path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path>
-                </svg>
-            </button>
+            <div class="slider-button flex items-center w-50 gap-5">
+                <button id="prevbtn" class="w-12 h-12 bg-gray-200 flex justify-center items-center"
+                    onclick="move_left()">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px"
+                        fill="none">
+                        <path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path>
+                    </svg>
+                </button>
+                <button id="nextbtn" onclick="move_right()"
+                    class="w-12 h-12 bg-gray-200 flex justify-center items-center">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px"
+                        fill="none">
+                        <path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
 
         <div class="slider-two-image" id="slider-2">
@@ -671,7 +729,7 @@
         <div id="slider-for">
             <div class="header-btn h-15 flex justify-between items-center ">
                 <h2 id="h2-move">Member Benefits</h2>
-                <div class="slider-for-btn flex gap-5">
+                <div class="slider-button flex items-center w-50 gap-5">
                     <button onclick="move_left4()"
                         class="w-12 h-12 bg-gray-100 flex items-center justify-center rounded-full ">
                         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px"
@@ -744,78 +802,21 @@
         </div>
         <!-- end for slider -->
 
-        <!-- start Collection -->
-        <div id="Collection">
-            <div class="container">
-                <h3>Icons</h3>
-                <ul>
-                    <li>Air Force 1</li>
-                    <li>Huarache</li>
-                    <li>Air Max 90</li>
-                    <li>Air Max 95</li>
-                    <li>Air Max 97</li>
-                    <li>Air Max 270</li>
-                    <li>Air Max 720</li>
-                    <li>All Air Max</li>
-                    <li>Vapormax</li>
-                </ul>
-            </div>
-            <div class="container">
-                <h3>Shoes</h3>
-                <ul>
-                    <li>All Shoes</li>
-                    <li>Custom Shoes</li>
-                    <li>Jordan Shoes</li>
-                    <li>Running Shoes</li>
-                    <li>Basketball Shoes</li>
-                    <li>Football Shoes</li>
-                    <li>Gym & Training Shoes</li>
-                    <li>Lifestyle Shoes</li>
-                </ul>
-            </div>
-            <div class="container">
-                <h3>Clothing</h3>
-                <ul>
-                    <li>All Clothing</li>
-                    <li>Modest Wear</li>
-                    <li>Hoodies & Pullovers</li>
-                    <li>Shirts & Tops</li>
-                    <li>Jackets</li>
-                    <li>Compression & Nike Pro</li>
-                    <li>Trouers & Leggings</li>
-                    <li>Shorts</li>
-                </ul>
-            </div>
-            <div class="container">
-                <h3>Kids'</h3>
-                <ul>
-                    <li>Infant & Toddler Shoes</li>
-                    <li>Kids' Shoes</li>
-                    <li>Kids' Jordan Shoes</li>
-                    <li>Kids' Basketball Shoes</li>
-                    <li>Kids' Running Shoes</li>
-                    <li>Kids's Clothing</li>
-                    <li>Kids' Backpacks</li>
-                    <li>Kids' Socks</li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <!-- end Collection -->
+        <hr><br>
 
         <!-- start footer -->
         <footer>
             <div class="footer">
-                <h3>Resources</h3>
-                <ul>
+                <h3 class="toggle-ul">Resources</h3>
+                <ul class="footer-ul">
                     <li><a href="#">Find A Store</a></li>
                     <li><a href="#">Become A Member</a></li>
                     <li><a href="#">Send Us Feedback</a></li>
                 </ul>
             </div>
             <div class="footer">
-                <h3>help</h3>
-                <ul>
+                <h3 class="toggle-ul">Help</h3>
+                <ul class="footer-ul">
                     <li><a href="#">Get Help</a></li>
                     <li><a href="#">Order Statues</a></li>
                     <li><a href="#">Delivery</a> </li>
@@ -826,8 +827,8 @@
                 </ul>
             </div>
             <div class="footer">
-                <h3>Company</h3>
-                <ul>
+                <h3 class="toggle-ul">Company</h3>
+                <ul class="footer-ul">
                     <li><a href="#"> About Nike</a></li>
                     <li><a href="#"> News</a></li>
                     <li><a href="#"> Careers</a></li>
@@ -835,12 +836,12 @@
                     <li><a href="#"> Sustainability</a></li>
                 </ul>
             </div>
-            <button onclick="loction()">
-                <ul>
+            <div class="locationbtn">
+                <button onclick="loction()">
                     <i class="bi bi-globe"></i>
                     India
-            </button>
-            </ul>
+                </button>
+            </div>
         </footer>
         <!-- end first footer  -->
 
