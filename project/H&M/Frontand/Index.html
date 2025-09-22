@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>www2.hm.com Home.html</title>
-    <link rel="stylesheet" href="CSS/Index.css">
-    <link rel="stylesheet" href="CSS/Style.css">
+    <!-- jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap Icon CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Stylesheet nav and footer  -->
+    <link rel="stylesheet" href="CSS/Style.css">
+    <!-- all content stylesheet -->
+    <link rel="stylesheet" href="CSS/Index.css">
 </head>
 
 <body>
@@ -25,9 +32,6 @@
                     <li>
                         <a href="#">Newsletter</a>
                     </li>
-                    <li>
-                        <a href="#"><span></span><span></span><span></span></a>
-                    </li>
                 </ul>
             </div>
             <div class="first-logo">
@@ -36,13 +40,19 @@
             <div class="first-item-end">
                 <ul>
                     <li>
-                        <a href="#"><i class="bi bi-person"></i> Sign in</a>
+                        <i class="bi bi-search small-dives"></i>
                     </li>
                     <li>
-                        <a href="#"><i class="bi bi-suit-heart"></i> Favourites</a>
+                        <a href="#"><i class="bi bi-person"></i> <span>Sign in</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="bi bi-bag"></i> Shopping bag (0)</a>
+                        <a href="#"><i class="bi bi-suit-heart"></i> <span>Favourites</span> </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-bag"></i> <span>Shopping bag</span> </a>
+                    </li>
+                    <li>
+                        <i class="bi bi-list-nested small-dives"></i>
                     </li>
                 </ul>
             </div>
@@ -78,53 +88,6 @@
         </div>
     </div>
 
-    <!-- ========================================= NAV BAR small size screen ================================== -->
-    <div id="small-nav-bar">
-        <div class="hm-list">
-            <i class="bi bi-list"></i>
-            <img src="Image/709px-H&M-Logo.svg.png" alt="H&M Logo">
-        </div>
-        <div class="hm-icons" style="display: none;">
-            <a href="#"><i class="bi bi-person"></i></a>
-            <a href="#"><i class="bi bi-search"></i></a>
-            <a href="#"><i class="bi bi-suit-heart"></i></a>
-            <a href="#"><i class="bi bi-bag"></i></a>
-        </div>
-    </div>
-    <div id="small-nav-list-item" style="display: none;">
-        <ul>
-            <li>
-                <img src="Image/Ladies1.avif" alt="">
-                <span>Ledies</span>
-                <div class="icon"><i class="bi bi-arrow-right-short"></i></div>
-            </li>
-            <li>
-                <img src="Image/Men1.avif" alt="">
-                <span>Mens</span>
-                <div class="icon"><i class="bi bi-arrow-right-short"></i></div>
-            </li>
-            <li>
-                <img src="Image/Baby1.avif" alt="">
-                <span>Boys</span>
-                <div class="icon"><i class="bi bi-arrow-right-short"></i></div>
-            </li>
-            <li>
-                <img src="Image/Kids1.avif" alt="">
-                <span>Kids</span>
-                <div class="icon"><i class="bi bi-arrow-right-short"></i></div>
-            </li>
-            <li>
-                <img src="Image/Home1.avif" alt="">
-                <span>Home</span>
-                <div class="icon"><i class="bi bi-arrow-right-short"></i></div>
-            </li>
-            <li>
-                <img src="Image/Sale1.avif" alt="">
-                <span>Sale</span>
-                <div class="icon"><i class="bi bi-arrow-right-short"></i></div>
-            </li>
-        </ul>
-    </div>
 
     <!-- ================================== Start hero section ============================= -->
 
@@ -172,19 +135,21 @@
     <!--  ------------------ END Info best salles -------------------- -->
 
     <!-- =================== Main-clothes-Content ============================ -->
-    <div id="main-clothe-content">
-        <a href="#">
-            <img src="Image/DS60G girl.avif" alt="one girl wear denim">
+    <div class="main-clothe-content">
+        <img src="Image/DS60G girl.avif" alt="one girl wear denim">
+        <div class="denim p-btn">
             <p>Denim & animal print</p>
-        </a>
-        <button>Shop now</button>
+            <button>Shop now</button>
+        </div>
     </div>
     <!-- END HERE -->
 
     <!-- ======================== Best deal here =============================== -->
     <div id="best-deal-here">
         <h3>Men's Fashion, Best Deals</h3>
-        <button class="left" onclick="left_slider()"> <i class="bi bi-arrow-left"></i></button>
+        <button class="left" onclick="left_slider()">
+             <i class="bi bi-arrow-left"></i>
+            </button>
 
         <div class="hm-slider">
             <div class="slider-item">
@@ -192,7 +157,7 @@
                 <p>Regular Fit Hoodie</p>
                 <p>Rs.1,149.00 <span>Rs.2,299.00</span></p>
             </div>
-            
+
             <div class="slider-item">
                 <img src="Image/hmgoepprod (1).jpg" alt="Oversized Fit Long-sleeved jersey top">
                 <p>Oversized Fit Long-sleeved jersey top</p>
@@ -285,23 +250,19 @@
     <!-- END image silder -->
 
     <!-- ==================== Show image box =======================================-->
-    <div id="main-clothe-content">
-        <a href="#">
-            <img src="Image/4021A-3x2-1-new-season-2-8y.avif" alt="one girl wear denim">
-            <div class="fresh-start">
-                <p>A Fresh start</p>
-                <button>Shop 2-8Y</button>
-            </div>
-        </a>
+    <div class="main-clothe-content">
+        <img src="Image/4021A-3x2-1-new-season-2-8y.avif" alt="one girl wear denim">
+        <div class="fresh-start p-btn">
+            <p>A Fresh start</p>
+            <button>Shop 2-8Y</button>
+        </div>
     </div>
-    <div id="main-clothe-content">
-        <a href="#">
-            <img src="Image/DS11B-3x2.avif" alt="one girl wear denim">
-            <div class="new-season">
-                <p class="p-text">New season denim</p>
+    <div class="main-clothe-content">
+        <img src="Image/DS11B-3x2.avif" alt="one girl wear denim">
+        <div class="new-season p-btn">
+            <p class="p-text">New season denim</p>
             <button>Shop now</button>
-            </div>
-        </a>
+        </div>
     </div>
 
 
@@ -313,8 +274,11 @@
     <footer>
         <div class="footer-ditail">
             <div class="ditail-item">
-                <h5>Shop</h5>
-                <ul>
+                <div class="ditail-head">
+                    <h4>Shop</h4>
+                    <i class="bi bi-chevron-compact-down small-dives"></i>
+                </div>
+                <ul class="footer-ul">
                     <li>Ladies</li>
                     <li>Men</li>
                     <li>Baby</li>
@@ -324,8 +288,11 @@
                 </ul>
             </div>
             <div class="ditail-item">
-                <h5>Corporate Info</h5>
-                <ul>
+                <div class="ditail-head">
+                    <h4>Corporate Info</h4>
+                    <i class="bi bi-chevron-compact-down small-dives"></i>
+                </div>
+                <ul class="footer-ul">
                     <li>Career at H&M</li>
                     <li>About H&M group</li>
                     <li>Substainbility H&M Group</li>
@@ -335,8 +302,11 @@
                 </ul>
             </div>
             <div class="ditail-item">
-                <h5>Help</h5>
-                <ul>
+                <div class="ditail-head">
+                    <h4>Help</h4>
+                    <i class="bi bi-chevron-compact-down small-dives"></i>
+                </div>
+                <ul class="footer-ul">
                     <li>Customer Service</li>
                     <li>My H&M</li>
                     <li>Find a store</li>
@@ -366,33 +336,13 @@
         </div>
 
         <div class="footer-hm-text">
-            <p>The content of this site is copyright-protectrd and is the property of H&M & Mouritz AB.</p>
             <img src="Image/709px-H&M-Logo.svg.png" alt="H&M logo" width="40px"><br>
             <a href="#">INDIAS | Rs.</a>
+            <p>The content of this site is copyright-protectrd and is the property of H&M & Mouritz AB.</p>
         </div>
     </footer>
 
-
+    <script src="Index.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- portfolio website learn from youtube link - https://youtu.be/ldwlOzRvYOU?si=dia5DE2f6JAsAYQz  -->
