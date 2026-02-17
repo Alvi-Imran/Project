@@ -102,6 +102,9 @@
         flex-wrap: nowrap;
         gap: 10px 0px;
         padding: 15px 0;
+        background-color: white;
+        border: none;
+        box-shadow: none;
     }
 
     .pro-box {
@@ -275,12 +278,16 @@
     /* project section */
 
     .pro-cover {
+        width: 100%;
         /* flex-direction: column; */
         justify-content: center;
         align-items: center;
         /* flex-wrap: nowrap; */
         gap: 15px;
         padding: 15px 10px;
+        background-color: white;
+        border: none;
+        box-shadow: none;
     }
 
     .pro-box {
