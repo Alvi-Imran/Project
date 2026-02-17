@@ -41,7 +41,7 @@
 
     .hero-section {
         width: 100%;
-        height: 90vh;
+       
     }
 
     .hero-cover {
@@ -220,10 +220,6 @@
     }
 
     /* hero section */
-
-      .hero-section {
-        height: 100vh;
-    }
 
     .hero-cover {
         display: flex;
