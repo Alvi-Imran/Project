@@ -1,4 +1,4 @@
-@media (max-width: 430px) {
+@media (max-width: 425px) {
     nav {
         width: 100%;
         height: 50px;
@@ -15,7 +15,7 @@
         display: block;
     }
 
-.nav-links {
+    .nav-links {
         width: 100%;
         height: 95vh;
         background-color: #fdd8a0;
@@ -37,80 +37,44 @@
         font-size: 1.2rem;
         font-weight: 500;
     }
-    /* hero section */
 
+    /* hero section */
     .hero-section {
         width: 100%;
-       
+        padding: 0 20px;
+        text-align: center;
+        font-size: 0.9rem;
     }
 
-    .hero-cover {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 20;
+    #roket-img {
+        width: 100px;
     }
 
-    .hero-imge {
-        width: 100%;
-        height: 50%;
-    }
+    @keyframes moverocket {
+        0% {
+            transform: rotate(0deg) translateY(0);
+            opacity: 1;
+        }
 
-    .hero-content {
-        width: 100%;
-        height: 30%;
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
+        100% {
+            transform: translateX(-80vh) translateY(-120vh);
+        }
     }
 
     /* end hero section css */
 
 
-
-    /* -- about content -- */
-    .about-cover {
-        flex-direction: column;
-    }
-
-    .about-box {
-        width: 100%;
-        height: 100%;
-    }
-
-    /* skill  */
-    .skill-cover {
-        flex-direction: column-reverse;
-    }
-
-    .skill-img {
-        width: 100%;
-    }
-
-    .skill-box {
-        width: 100%;
-    }
-
     /* project section */
-
     .pro-cover {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        gap: 10px 0px;
-        padding: 15px 0;
-        background-color: white;
-        border: none;
-        box-shadow: none;
+        flex-wrap: wrap;
+        padding: 0;
     }
 
     .pro-box {
-        width: 90%;
-        max-height: 200px;
-        flex-direction: row;
+        
+        width: 40%;
+        max-height: 60%;
+        
         padding: 0;
     }
 
@@ -120,21 +84,27 @@
     }
 
     .pro-img img {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
     .pro-contant {
-        width: 60%;
+        width: 40%;
         height: auto;
         justify-content: space-evenly;
     }
 
-    /* footer */
-    #contact {
-        width: 100%;
-        height: 100%;
+    .pro-contant p{
+        font-size: 0.8rem;
     }
+
+    .pro-contant button{
+        max-width: 100px;
+        height: 30px;
+    }
+
+    /* footer */
+
 
     .contact-box {
         height: 100%;
@@ -176,7 +146,7 @@
 
 }
 
-@media (min-width: 431px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     nav {
         width: 100%;
         height: 50px;
@@ -196,10 +166,9 @@
         font-size: 26px;
     }
 
-  .nav-links {
+    .nav-links {
         width: 100%;
         height: 95vh;
-        background-color: #fdd8a0;
         display: none;
         justify-content: center;
         align-items: center;
@@ -220,108 +189,77 @@
     }
 
     /* hero section */
-
-    .hero-cover {
-        display: flex;
-        flex-wrap: wrap-reverse;
+     .hero-section {
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 0.9rem;
     }
 
-
-    .hero-imge {
-        width: 100%;
-        height: auto;
+    #roket-img {
+        width: 100px;
     }
 
-    .hero-content {
-        width: 100%;
-        height: auto;
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
+    @keyframes moverocket {
+        0% {
+            transform: rotate(0deg) translateY(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateX(-80vh) translateY(-120vh);
+        }
     }
 
     /* end hero section css */
 
-    /* -- about content -- */
-    .about-cover {
-        flex-direction: column;
-    }
-
-    .about-box {
-        width: 100%;
-        height: 100%;
-    }
-
-    .image-about {
-        width: 70%;
-        height: 50%;
-    }
-
-    /* skill  */
-    .skill-cover {
-        flex-direction: column-reverse;
-    }
-
-    .skill-img {
-        width: 100%;
-    }
-
-    .skill-box {
-        width: 100%;
-    }
 
     /* project section */
-
     .pro-cover {
-        width: 100%;
-        /* flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-        /* flex-wrap: nowrap; */
-        gap: 15px;
-        padding: 15px 10px;
-        background-color: white;
-        border: none;
-        box-shadow: none;
+        flex-wrap: wrap;
+        padding: 0;
     }
 
     .pro-box {
         max-width: 30%;
-        min-width: 150px;
-        gap: 10px;
-        border-radius: 15px;
+        max-height: 50%;
+        padding: 10px;
     }
 
     .pro-img {
-        width: 50%;
+        width: 40%;
         height: auto;
     }
 
     .pro-img img {
-        width: 70%;
+        width: 100%;
         height: auto;
     }
 
     .pro-contant {
-        width: 100%;
-        /* background-color: sandybrown; */
+        width: 40%;
         height: auto;
         justify-content: space-evenly;
+        text-align: center;
     }
 
-    /* .pro-contant button{
+    .pro-contant p{
+        font-weight: 100;
+        font-size: 0.8rem;
+    }
+
+    .pro-contant button{
         max-width: 100px;
-    } */
+        height: 30px;
+    }
+
+    .pro-contant button a{
+        font-size: 0.7rem;
+
+    }
 
 
     /* footer */
-    #contact {
-        width: 100%;
-        height: 100%;
-        background-color: rgb(255, 25, 0);
-    }
-
     .contact-box {
         height: 100%;
         height: 100%;
@@ -346,12 +284,6 @@
     .footerbox {
         width: 50%;
         height: auto;
-    }
-
-    .social-links {
-        margin-top: 25px;
-        flex-wrap: wrap;
-        gap: 20px 0px;
     }
 
     .contact-form textarea,
@@ -404,58 +336,26 @@
 
 
     /* hero section */
-    .hero-section {
-        height: 90vh;
-    }
-
-    .hero-imge {
-        width: 50%;
-        height: auto;
-    }
-
-    .hero-content {
-        width: 50%;
-        height: auto;
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
+   
 
     /* end hero section css */
 
-    /* -- about content -- */
-    .about-box {
-        width: 100%;
-        height: 100%;
-    }
-
-    .image-about {
-        width: 70%;
-        height: 50%;
-    }
-
-    /* skill  */
-    .skill-img {
-        width: 50%;
-    }
-
-    .skill-box {
-        width: 50%;
-    }
-
     /* project section */
+    #project{
+        min-height: 100vh;
+    }
+
     .pro-cover {
-        justify-content: center;
+        height: 70%;
+        justify-content: space-evenly;
         align-items: center;
-        gap: 15px 15px;
-        padding: 20px 10px;
-        background-color: white;
-        border: none;
+        gap: 15px;
+        border: none; 
     }
 
     .pro-box {
-        width: 30%;
+        max-width: 220px;
+        min-height: 200px;
     }
 
     .pro-img {
@@ -464,7 +364,7 @@
     }
 
     .pro-img img {
-        width: 50%;
+        width: 80%;
         height: auto;
     }
 
@@ -472,6 +372,11 @@
         width: 60%;
         height: auto;
         text-align: center;
+    }
+
+    .pro-contant button {
+        width: 120px;
+        height: 30px;
     }
 
     /* footer */
@@ -563,44 +468,6 @@
 
 
 
-    /* --- hero section */
-    .hero-section {
-        width: 100%;
-        height: 90vh;
-    }
-
-    .hero-cover {
-        width: 100%;
-        height: 100%;
-    }
-
-    .hero-content {
-        font-size: 2rem;
-    }
-
-    /*end hero section  */
-
-    /* about section  */
-    #about {
-        width: 100%;
-        padding: 40px 0;
-    }
-
-    .about-contant p {
-        font-size: 1.1rem;
-
-    }
-
-    /* end about section */
-
-    /* skill section */
-    .skil {
-        width: 100%;
-        height: 100%;
-    }
-
-    /* end  skill section */
-
     /* project section */
 
     #project {
@@ -621,7 +488,7 @@
     /* end project section */
 
     /* footer css */
-    #contac{
+    #contac {
         width: 100%;
         height: 90vh;
     }
