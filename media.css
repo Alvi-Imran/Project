@@ -41,8 +41,8 @@
     /* hero section */
     .hero-section {
         width: 100%;
-
-        padding: 0 50px;
+        
+        padding: 10% 20px;
         text-align: center;
         font-size: 0.9rem;
     }
