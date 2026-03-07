@@ -343,8 +343,7 @@ nav .logo a {
 
 #project {
     width: 100%;
-    min-height: 100vh;
-    background-color: #d6d9f5;
+    min-height: 100%;
 }
 
 .project-heading {
