@@ -6,11 +6,10 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     height: 100%;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    scroll-behavior: smooth;
-    transition: all 10s;
     background:
         radial-gradient(circle at bottom right, #90bdeb 20%, #6fa3e8 30%, transparent 60%),
         linear-gradient(135deg, #020617 0%, #061a44 40%, #0b3c8a 70%);
@@ -103,7 +102,7 @@ nav .logo a {
 /* --- hero section */
 .hero-section {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
