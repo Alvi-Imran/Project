@@ -344,7 +344,7 @@ nav .logo a {
 #project {
     width: 100%;
     min-height: 100vh;
-    /* background-color: #d6d9f5; */
+    background-color: #d6d9f5;
 }
 
 .project-heading {
