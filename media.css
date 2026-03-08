@@ -16,27 +16,46 @@
         color: white;
     }
 
-    .nav-links {
-        width: 100%;
+        .nav-links {
+        width: 50%;
         height: 95vh;
-        background-color: #fdd8a0;
+        background-color: #5e9eff;
         display: none;
         justify-content: center;
         align-items: center;
         position: fixed;
         top: 50px;
         right: 0%;
+        /* transform: translateX(100%); */
+    }
+    
+    .nav-links.block{
+        display: block;
+    }
+    
+    .all-links {
+        overflow: hidden;
+        flex-direction: column;
+        gap: 10px 0;
+        position: relative;
+        transition: all 2s;
+        padding: 10% 0;
     }
 
+    .all-links li{
+        transition: transform 2s ease;
+        transform: translateX(100%);
+    }
 
-    .all-links ul {
-        flex-direction: column;
-        transition: all 3s;
+    .all-links li.remove{
+        transform: translateX(10%);
     }
 
     .all-links li a {
-        font-size: 1.2rem;
-        font-weight: 500;
+        /* position: absolute; */
+        font-size: 1.5rem;
+        font-weight: 600;
+
     }
 
     /* hero section */
@@ -170,28 +189,47 @@
         font-size: 26px;
     }
 
-    .nav-links {
-        width: 100%;
+        .nav-links {
+        width: 50%;
         height: 95vh;
+        background-color: #5e9eff;
         display: none;
         justify-content: center;
         align-items: center;
         position: fixed;
         top: 50px;
         right: 0%;
+        /* transform: translateX(100%); */
+    }
+    
+    .nav-links.block{
+        display: block;
+    }
+    
+    .all-links {
+        overflow: hidden;
+        flex-direction: column;
+        gap: 10px 0;
+        position: relative;
+        transition: all 2s;
+        padding: 10% 0;
     }
 
+    .all-links li{
+        transition: transform 2s ease;
+        transform: translateX(100%);
+    }
 
-    .all-links ul {
-        flex-direction: column;
-        transition: all 3s;
+    .all-links li.remove{
+        transform: translateX(10%);
     }
 
     .all-links li a {
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
+        /* position: absolute; */
+        font-size: 1.5rem;
+        font-weight: 600;
 
+    }
     /* hero section */
      .hero-section {
         width: 100%;
