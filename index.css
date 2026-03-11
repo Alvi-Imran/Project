@@ -25,7 +25,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -92,6 +92,9 @@ nav .logo a {
     width: 10%;
 }
 
+.desk-none {
+    display: none;
+}
 
 .toggle {
     display: none;
@@ -153,7 +156,7 @@ nav .logo a {
     }
 }
 
-.heading-name{
+.heading-name {
     z-index: 0;
 }
 
@@ -229,7 +232,7 @@ nav .logo a {
     z-index: 2;
 }
 
-.btn a{
+.btn a {
     color: #122957;
     font-weight: 500;
 }
