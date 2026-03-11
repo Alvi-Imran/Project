@@ -72,26 +72,6 @@ nav .logo a {
     font-size: 1rem;
 }
 
-.all-links li a::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: #222;
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    transition: width 0.3s ease;
-}
-
-
-.all-links li a:hover {
-    color: #b7cafd;
-}
-
-.all-links li a:hover::after {
-    width: 10%;
-}
-
 .desk-none {
     display: none;
 }
