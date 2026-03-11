@@ -1,7 +1,7 @@
 // Nav toggle button
 
 let link = document.querySelector(".nav-links");
-let toggle = document.querySelector(".bi")
+let toggle = document.querySelector(".bi-list")
 let li = document.querySelectorAll(".all-links li");
 
 
