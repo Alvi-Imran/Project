@@ -7,6 +7,7 @@ let Navclose = document.querySelector(".bi-x-circle");
 
 // open menu
 NavMenu.addEventListener("click", () => {
+  NavMenu.style.display = "none";
   link.classList.add("block");
   document.body.classList.add("no-scroll")
   li.forEach((list, ind) => {
@@ -18,6 +19,7 @@ NavMenu.addEventListener("click", () => {
 
 // close menu
 Navclose.addEventListener("click", function () {
+  NavMenu.style.display = "block";
   link.classList.remove("block")
   document.body.classList.remove("no-scroll")
   li.forEach((list, ind) => {
@@ -30,6 +32,7 @@ Navclose.addEventListener("click", function () {
 li.forEach((el, ind) => {
   el.addEventListener("click", function () {
     link.classList.remove("block");
+      NavMenu.style.display = "block";
     document.body.classList.remove("no-scroll")
     li.forEach((list) => {
       list.classList.remove("remove");
