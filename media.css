@@ -225,6 +225,7 @@
 
     .toggle i {
         font-size: 26px;
+        color: #ffffff;
     }
 
     .desk-none {
@@ -436,6 +437,7 @@
 
     .toggle i {
         font-size: 26px;
+        color: #ffffff;
     }
 
     .nav-links {
@@ -444,19 +446,8 @@
     }
 
 
-    .all-links ul {
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-    }
 
     /* end nav css */
-
-
-    /* hero section */
-
-
-    /* end hero section css */
 
     /* project section */
     #project {
