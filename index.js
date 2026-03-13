@@ -1,36 +1,40 @@
 // Nav toggle button
 
 let link = document.querySelector(".nav-links");
-let toggle = document.querySelector(".bi-list")
+let NavMenu = document.querySelector(".bi-list")
 let li = document.querySelectorAll(".all-links li");
+let Navclose = document.querySelector(".bi-x-circle");
 
-
-toggle.addEventListener("click",()=>{
-  
-
-    if (!link.classList.contains("block")) {
-    // Menu open
-    link.classList.add("block");
-
-    li.forEach((list, ind) => {
-      setTimeout(() => {
-        list.classList.add("remove");
-      }, ind * 200);
-    });
-
-  } else {
-    // Menu close (reverse animation)
-    li.forEach((list, ind) => {
-      setTimeout(() => {
-        list.classList.remove("remove");
-      }, ind * 200);
-    });
-
+// open menu
+NavMenu.addEventListener("click", () => {
+  link.classList.add("block");
+  document.body.classList.add("no-scroll")
+  li.forEach((list, ind) => {
     setTimeout(() => {
-      link.classList.remove("block");
-    }, li.length * 200);
-  }
+      list.classList.add("remove");
+    }, ind * 200);
+  });
+})
 
+// close menu
+Navclose.addEventListener("click", function () {
+  link.classList.remove("block")
+  document.body.classList.remove("no-scroll")
+  li.forEach((list, ind) => {
+    list.classList.remove("remove");
+  });
+
+})
+
+// list a tag click close menu 
+li.forEach((el, ind) => {
+  el.addEventListener("click", function () {
+    link.classList.remove("block");
+    document.body.classList.remove("no-scroll")
+    li.forEach((list) => {
+      list.classList.remove("remove");
+    })
+  })
 })
 
 

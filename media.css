@@ -21,24 +21,37 @@
     }
 
     .nav-links {
-        width: 60%;
+        padding: 10PX 0;
+        width: 50%;
         height: 100vh;
-        background-color: #5e9eff;
-        background-image: linear-gradient(to top, #122847, #5e9eff, #7798ce);
+        background:
+            radial-gradient(circle at bottom right, #90bdeb 20%, #6fa3e8 30%, transparent 60%),
+            linear-gradient(1deg, #020617 0%, #061a44 40%, #0b3c8a 70%);
         display: none;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         position: fixed;
         top: 0px;
-        left: 0px;
+        left: 0%;
         transform: translateX(-100%);
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .bi-x-circle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #d9e1ec;
+        font-size: 1.3rem;
     }
 
     .nav-links h2 {
         padding: 10px;
         color: #e4edfa;
     }
-
 
     .nav-links.block {
         display: block;
@@ -55,11 +68,9 @@
         padding: 10% 0;
     }
 
-
     .all-links li {
         border-bottom: 1px solid white;
         padding: 10px;
-        /* background-color: #bb5d2d; */
         transition: transform 2s ease;
         transform: translateX(-100%);
         position: relative;
@@ -87,8 +98,7 @@
     /* hero section */
     .hero-section {
         width: 100%;
-
-        padding: 10% 20px;
+        padding: 0 20px;
         text-align: center;
         font-size: 0.9rem;
     }
@@ -122,8 +132,10 @@
     }
 
     .pro-box {
+
         width: 40%;
         max-height: 60%;
+
         padding: 0;
     }
 
@@ -220,17 +232,23 @@
     }
 
     .nav-links {
-        width: 60%;
+        padding: 10PX 0;
+        width: 50%;
         height: 100vh;
-        background-color: #5e9eff;
-        background-image: linear-gradient(to top, #122847, #5e9eff, #7798ce);
+        background:
+            radial-gradient(circle at bottom right, #90bdeb 20%, #6fa3e8 30%, transparent 60%),
+            linear-gradient(1deg, #020617 0%, #061a44 40%, #0b3c8a 70%);
         display: none;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         position: fixed;
         top: 0px;
-        left: 0px;
+        left: 0%;
         transform: translateX(-100%);
+    }
+
+    .no-scroll {
+        overflow: hidden;
     }
 
     .bi-x-circle {
@@ -264,7 +282,6 @@
     .all-links li {
         border-bottom: 1px solid white;
         padding: 10px;
-        /* background-color: #bb5d2d; */
         transition: transform 2s ease;
         transform: translateX(-100%);
         position: relative;
