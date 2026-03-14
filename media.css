@@ -22,7 +22,7 @@
 
     .nav-links {
         padding: 10PX 0;
-        width: 70%;
+        width: 70vw;
         height: 100vh;
         background:
             radial-gradient(circle at bottom right, #90bdeb 20%, #6fa3e8 30%, transparent 60%),
@@ -236,7 +236,7 @@
 
     .nav-links {
         padding: 10PX 0;
-        width: 50%;
+        width: 70vw;
         height: 100vh;
         background:
             radial-gradient(circle at bottom right, #90bdeb 20%, #6fa3e8 30%, transparent 60%),
