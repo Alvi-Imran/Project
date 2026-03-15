@@ -141,6 +141,10 @@ nav .logo a {
 
 .heading-name{
     z-index: 0;
+    /* animation: HeroHeading 0.7s ease; */
+}
+
+.heading-name.headAnimatioon{
     animation: HeroHeading 0.7s ease;
 }
 

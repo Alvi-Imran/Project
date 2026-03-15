@@ -41,3 +41,13 @@ li.forEach((el, ind) => {
 })
 
 
+// window load animtion on hero-heading
+let headingName = document.querySelector(".heading-name");
+
+window.addEventListener("load",(event)=>{
+  console.log("window loading proper");
+  setTimeout(()=>{
+    headingName.classList.add("headAnimatioon")
+  },300)
+  
+})
