@@ -20,31 +20,36 @@
             gap: 20px;
             justify-content: center;
             align-items: center;
-            background-color: #d9f0cc;
+            background: linear-gradient(135deg, #2b5fa6, #6fa8dc, #b7d7f2);
         }
 
-        h1{
+        h1 {
             font-family: Arial, Helvetica, sans-serif;
-            color: orangered;
+            color: rgb(238, 227, 223);
         }
 
         .clock {
             width: 300px;
             height: 300px;
-            background-color: rgba(250, 247, 247, 0.849);
-            border-radius: 50%;
-            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 10px solid rgb(196, 194, 194);
-            box-shadow: 5px 5px 20px inset #464646;
+
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(white, white) padding-box,
+                linear-gradient(45deg, #c0c0c0, #f0f0f0, #999) border-box;
+            border: 12px solid transparent;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
 
         .clock-num {
             position: absolute;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 600;
+            color: #020202;
         }
 
         .num12 {
@@ -86,14 +91,14 @@
             background-color: green;
         }
 
-        .head-hours{
+        .head-hours {
             height: 80px;
         }
 
-        .head-min{
+        .head-min {
             height: 90px;
+            background: #3498db;
         }
-       
     </style>
 </head>
 
@@ -101,7 +106,7 @@
     <h1>Wall Clock</h1>
 
     <div class="clock">
-        <div class="clock-heads" id="hour"><i class="heads head-hours" style="background-color: skyblue;"></i></div>
+        <div class="clock-heads" id="hour"><i class="heads head-hours" style="background-color: rgb(180, 187, 247);"></i></div>
         <div class="clock-heads" id="min"><i class="heads head-min" style="background-color: black;"></i></div>
         <div class="clock-heads" id="sec"><i class="heads" style="background-color: red;"></i></div>
 
@@ -115,32 +120,33 @@
 
 
 
-<script>
-    let h = document.getElementById("hour");
-    let m = document.getElementById("min");
-    let s= document.getElementById("sec");
+    <script>
+        let h = document.getElementById("hour");
+        let m = document.getElementById("min");
+        let s = document.getElementById("sec");
 
-    function clock(){
-        let Dates = new Date();
-        
-        let hr = Dates.getHours();
-        let mi = Dates.getMinutes();
-        let se = Dates.getSeconds();
-        
-        let hrotate = (hr/12) * 360;
-        let mrotate = (mi/60) * 360;
-        let srotate = (se/60) * 360;
-              
-        h.style.transform = `rotate(${hrotate}deg)`;
-        m.style.transform = `rotate(${mrotate}deg)`;
-        s.style.transform = `rotate(${srotate}deg)`;
+        function clock() {
+            let Dates = new Date();
 
-    }
+            let hr = Dates.getHours();
+            let mi = Dates.getMinutes();
+            let se = Dates.getSeconds();
 
-    setInterval(clock,1000)
+            let hrotate = (hr / 12) * 360;
+            let mrotate = (mi / 60) * 360;
+            let srotate = (se / 60) * 360;
+
+            h.style.transform = `rotate(${hrotate}deg)`;
+            m.style.transform = `rotate(${mrotate}deg)`;
+            s.style.transform = `rotate(${srotate}deg)`;
+
+        }
+
+        setInterval(clock, 1000)
 
 
 
-</script>
+    </script>
 </body>
+
 </html>
