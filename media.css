@@ -138,12 +138,18 @@
 
     .pro-box {
         max-width: 180px;
-        max-height: 300px;
+        max-height: 350px;
         padding: 5px;
     }
 
-    .pro-contant {
+    .pro-img {
         height: 150px;
+    }
+
+    .pro-contant {
+        height: 200px;
+        padding: 10px 0;
+        justify-content: space-between;
     }
 
     .use-skill {
