@@ -131,8 +131,9 @@
     /* project section */
 
     .pro-cover {
-        width: 95%;
-        /* gap: 0px; */
+        width: 100%;
+        gap: 15px;
+        padding: 10px;
     }
 
     .pro-box {
