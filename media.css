@@ -132,7 +132,7 @@
 
     .pro-cover {
         width: 95%;
-        gap: 10px;
+        /* gap: 0px; */
     }
 
     .pro-box {
