@@ -122,11 +122,10 @@
     }
 
     #hero-cover {
-        position: absolute;
-        left: 0;
         width: 100%;
         position: absolute;
-        bottom: 0;
+        left: 0;
+        bottom: 10%;
         align-items: start;
     }
 
