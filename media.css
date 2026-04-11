@@ -101,29 +101,56 @@
     /* hero section */
     .hero-section {
         width: 100%;
+        height: 100vh;
         padding: 0 20px;
         text-align: center;
         font-size: 0.9rem;
     }
 
-    #roket-img {
-        width: 100px;
-    }
-
-    @keyframes moverocket {
-        0% {
-            transform: rotate(20deg) translateY(0);
-            opacity: 1;
-        }
-
-        100% {
-            transform: translateX(-30vh) translateY(-80vh);
-        }
-    }
-
     .mouse {
-        bottom: 15%;
+        width: 430px;
+        height: 430px;
+        top: -5%;
+        right: -10%;
+        /* background-color: transparent; */
     }
+
+    #freepik_stories-hand-coding {
+        width: 280px;
+        height: 280px;
+        top: 12%;
+    }
+
+    #hero-cover {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        align-items: start;
+    }
+
+    .heading-name:nth-child(1) {
+        font-size: 1.7rem;
+    }
+
+    .heading-name:nth-child(2) {
+        font-size: 32px;
+    }
+
+    #skill-ui {
+        font-size: 1.2rem;
+    }
+
+    .contact-text {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: auto;
+    }
+
 
     /* end hero section css */
 
@@ -304,26 +331,57 @@
     }
 
     /* hero section */
+    /* hero section */
     .hero-section {
         width: 100%;
+        height: 100vh;
         padding: 0 20px;
         text-align: center;
         font-size: 0.9rem;
     }
 
-    #roket-img {
-        width: 100px;
+    .mouse {
+        max-width: 520px;
+        max-height: 520px;
+        top: -5%;
+        right: -10%;
+        /* background-color: transparent; */
     }
 
-    @keyframes moverocket {
-        0% {
-            transform: rotate(0deg) translateY(0);
-            opacity: 1;
-        }
+    #freepik_stories-hand-coding {
+        max-width: 370px;
+        max-height: 370px;
+        top: 10%;
+    }
 
-        100% {
-            transform: translateX(-80vh) translateY(-120vh);
-        }
+    #hero-cover {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        align-items: start;
+    }
+
+    .heading-name:nth-child(1) {
+        font-size: 1.7rem;
+    }
+
+    .heading-name:nth-child(2) {
+        font-size: 32px;
+    }
+
+    #skill-ui {
+        font-size: 1.2rem;
+    }
+
+    .contact-text {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: auto;
     }
 
     /* end hero section css */
@@ -429,7 +487,56 @@
     /* end nav css */
 
 
+    .hero-section {
+        width: 100%;
+        height: 100vh;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 0.9rem;
+    }
 
+    .mouse {
+        max-width: 520px;
+        max-height: 520px;
+        top: -5%;
+        right: -10%;
+        /* background-color: transparent; */
+    }
+
+    #freepik_stories-hand-coding {
+        max-width: 350px;
+        max-height: 350px;
+        top: 10%;
+        right: 20px;
+    }
+
+    #hero-cover {
+        max-width: 50%;
+        position: absolute;
+        /* bottom: 0; */
+        align-items: start;
+    }
+
+    .heading-name:nth-child(1) {
+        font-size: 1.7rem;
+    }
+
+    .heading-name:nth-child(2) {
+        font-size: 32px;
+    }
+
+    #skill-ui {
+        font-size: 1.2rem;
+    }
+
+    .contact-text {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: auto;
+    }
 
     /* project section */
     #project {
@@ -512,11 +619,11 @@
     .nav-links a {
         color: black;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .nav-links a:hover {
-        color: #bb5d2d;
+        color: #6e21eb;
     }
 
     .toggle {
@@ -525,7 +632,26 @@
 
     /* end nav */
 
+    .mouse {
+        position: absolute;
+        top: -15%;
+        right: -10%;
+        max-width: 700px;
+        max-height: 700px;
+    }
 
+
+    #freepik_stories-hand-coding {
+        position: absolute;
+        top: 10%;
+        right: 30px;
+        width: 450px;
+        height: 450px;
+    }
+
+    #hero-cover{
+        max-width: 50%;
+    }
 
     /* project section */
 
