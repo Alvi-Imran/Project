@@ -299,6 +299,15 @@ nav .all-links {
     border-radius: 16px;
     font-weight: bold;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.skill-card img{
+    width: 40px;
+    height: auto;
 }
 
 .skill-card:hover {
