@@ -96,4 +96,21 @@ priceQuantityBox.innerHTML = quantityPrice;
 
 buyBtn.addEventListener("click", function () {
     window.location.href = "checkout-page.html";
+
+    
 }) 
+
+
+// addToCart
+function c(k) {
+    cart = JSON.parse(localStorage.getItem('cartData')) || [];
+    let cartItem = Data[k];
+
+    const itemcheck = cart.some(item => item.id === cartItem.id);
+    if (!itemcheck) {
+        cart.unshift(cartItem);
+        localStorage.setItem('cartData', JSON.stringify(cart));
+    } else {
+        alert("Item is already in the cart")
+    }
+};

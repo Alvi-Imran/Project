@@ -16,45 +16,52 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body id="product-Detail">
     <header>
         <nav>
             <div class="logo" id="logo">
-                <a href="index.html"><img src="Logo/shopcart.png" alt=""></a>
-            </div>
-            <div class="search-bar">
-                <input type="search" name="search" id="search" placeholder="Search" spellcheck="true">
-                <button id="search-btn"><i class="bi bi-search"></i></button>
-            </div>
-            <div class="login">
-                <i class="bi bi-person-circle"></i>
-                <span class="spanTag">Login</span>
-                <div class="login-dital">
-                    <button><a href="#">Sign up</a></button>
-                    <hr>
-                    <ul>
-                        <li><i class="bi bi-person-circle"></i>My profile</li>
-                        <li><i class="bi bi-box2"></i>My Order</li>
-                        <li><i class="bi bi-heart"></i>Wishlist</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="cart" onclick="cartfunc()">
-                <a href="#">
-                    <i class="bi bi-cart3"></i>
-                    <span class="spanTag">Cart <span id="cartval"
-                            style="background-color: gray; color: aliceblue;"></span></span>
+                <a href="index.html">
+                    <img src="Logo/shopcart.png" alt="">
                 </a>
             </div>
-            <div class="servces">
-                <span></span>
-                <span></span>
-                <span></span>
-                <div class="servces-list">
-                    <ul>
-                        <li><i class="bi bi-bell"></i>Notification</li>
-                        <li><i class="bi bi-headset"></i>24x7 Customer care</li>
-                    </ul>
+            <div class="search-bar">
+                <input list="li" type="search" name="search" id="search" placeholder="Search" spellcheck="true">
+                <button id="search-btn"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="nav-covers">
+                <i class="bi bi-list"></i>
+                <div class="nav-all-cover">
+                    <div class="login">
+                        <i class="bi bi-person-circle"></i>
+                        <span class="spanTag">Login</span>
+                        <div class="login-dital">
+                            <button><a href="#">Sign up</a></button>
+                            <hr>
+                            <ul>
+                                <li><i class="bi bi-person-circle"></i>My profile</li>
+                                <li><i class="bi bi-box2"></i>My Order</li>
+                                <li><i class="bi bi-heart"></i>Wishlist</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cart" onclick="Cartfun()">
+                        <a href="#">
+                            <i class="bi bi-cart3"></i>
+                            <span class="spanTag">Cart <span id="cartval"
+                                    style="background-color: gray; color: aliceblue;"></span></span>
+                        </a>
+                    </div>
+                    <div class="servces">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="servces-list">
+                            <ul>
+                                <li><i class="bi bi-bell"></i>Notification</li>
+                                <li><i class="bi bi-headset"></i>24x7 Customer care</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -64,6 +71,10 @@
 
     <!-- Add To cart box -->
     <div id="addCart">
+        <div class="cart-empty" id="notCart">
+            <img src="Products/empty-cart.png" alt="">
+            <p>Your Add to Cart Empty</p>
+        </div>
         <div class="cart-head">
             <div class="head-item">Item</div>
             <div class="head-item">Price</div>
@@ -71,33 +82,7 @@
             <div class="head-item">Total</div>
             <div class="head-item"></div>
         </div>
-        <div class="cart-cover" id="cart-cover">
-            <div class="cart-all-item" id="cart-data">
-                <div class="all-item">
-                    <div class="cart-img">
-                        <img src="Products/samsung S25 ultra.webp" alt="">
-                    </div>
-                    <div class="cart-ditail">
-                        <h3>Samsung</h3>
-                        <p>Samsung Galaxy S25 Ultra</p>
-                        <p>Black, 126GB ROM | 12GB RAM</p>
-                    </div>
-                </div>
-                <div class="all-item">₹1,41,999</div>
-                <div class="all-item">
-                    <div class="card-btn">
-                        <button class="minus">-</button>
-                        <input class="inp-value" type="text" readonly value="1">
-                        <button class="plus">+</button>
-                    </div>
-                </div>
-                <div class="all-item">₹1,41,999</div>
-                <div class="all-item">
-                    <button>Remove</button><br>
-                    <button>buy</button>
-                </div>
-            </div>
-        </div>
+        <div class="cart-cover" id="cart-cover"></div>
     </div>
     <!-- end cart -->
 
@@ -126,8 +111,8 @@
                     harum fugit debitis sint beatae.</p>
             </div>
             <div class="container-item price-quantity-box">
-                 <!-- insrt price and quantity box -->
-                
+                <!-- insrt price and quantity box -->
+
             </div>
             <div class="container-item">
                 <button>ADD TO CART</button>
@@ -188,8 +173,8 @@
     </footer>
 
     <!-- JS link -->
-     <script src="more.js"></script>
-     <script src="productdital.js"></script>
+    <script src="more.js"></script>
+    <script src="productdital.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
