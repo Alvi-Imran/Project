@@ -354,5 +354,5 @@ function c(k) {
 function buy(k) {
     const buyItem = Data[k]
     localStorage.setItem("showdetail", JSON.stringify([buyItem]));
-    window.location.href = "productdetail.html";
+    window.location.href = "productdital.html";
 }
